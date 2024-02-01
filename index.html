@@ -20,35 +20,34 @@
   </head>
   <body class="min-h-screen bg-white text-brand-dark-gray selection:bg-primary/10 selection:text-primary">
     <header>
-      <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur pb-5 md:pb-0">
+      <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur pb-5 md:pb-0 shadow-xl shadow-gray-200/50">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
           <div class="flex flex-col md:flex-row items-center justify-between gap-0 lg:py-4">
             <div class="z-20 flex w-full justify-between md:px-0 md:w-max">
               <a href="index.html" aria-label="logo" class="flex items-center space-x-2">
                 <img class="h-20 lg:h-14 py-4 lg:py-0 w-auto" src="images/logos/metrics_logo.png"/>
               </a>
-<!--
-              <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
-                <div aria-hidden="true" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300"></div>
-                <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300"></div>
-              </button>
--->
             </div>
             <div id="navlinks" class="flex items-center">
               <div class="md:pr-4">
-                <ul class="font-medium flex text-sm gap-10 md:gap-0">
+                <ul class="font-medium flex text-sm gap-10">
                   <li>
-                    <a class="hover:text-primary md:px-4" href="#about-us">
+                    <a class="hover:text-primary md:px-4 font-bold" href="about-us/index.html">
                       <span>About us</span>
                     </a>
                   </li>
                   <li>
-                    <a class="hover:text-primary md:px-4" href="#resources">
+                    <a class="hover:text-primary md:px-4 font-bold" href="events/index.html">
+                      <span>Events</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="hover:text-primary md:px-4 font-bold" href="#resources">
                       <span>Resources</span>
                     </a>
                   </li>
                   <li>
-                    <a class="hover:text-primary md:px-4" href="support/index.html">
+                    <a class="hover:text-primary md:px-4 font-bold" href="support/index.html">
                       <span>Support</span>
                     </a>
                   </li>
@@ -60,7 +59,7 @@
       </nav>
     </header>
 
-    <section id="home" class="relative pt-[175px] md:pt-[200px] pb-[70px] md:pb-[100px] border-y border-gray-100">
+    <section class="hero-primary pt-[175px] md:pt-[200px] pb-[70px] md:pb-[100px] border-b border-blue-100 bg-blue-100/25 bg-gradient-to-br from-white to-blue-200/50 mb-20">
       <div class="px-10 md:px-0">
         <div class="flex">
           <div class="w-full px-4">
@@ -75,7 +74,7 @@
           </div>
         </div>
       </div>
-
+<!--
       <div class="hidden lg:block">
         <div class="absolute top-0 right-0 z-[-1]">
           <svg width="450" height="556" viewBox="0 0 450 556" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,8 +154,8 @@
           </svg>
         </div>
       </div>
+-->
     </section>
-
 <!--
     <section class="pt-32 sm:pt-40 md:pt-48">
       <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -176,7 +175,7 @@ __>
 -->
 
     <!--<section class="pt-20 md:pt-32">-->
-    <section class="pt-20" id="about-us">
+    <section id="about-us">
       <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
         <div class="text-center">
           <h2 class="text-3xl font-bold md:text-4xl xl:text-5xl">About us</h2>
@@ -225,10 +224,10 @@ __>
       </div>
     </section>
 
-    <section class="relative py-32" id="resources">
+    <section class="relative pt-32" id="resources">
       <div aria-hidden="true" class="absolute inset-0 top-80 grid grid-cols-2 opacity-50">
-        <div class="h-60 bg-gradient-to-br from-blue-900 to-purple-400 blur-[106px]"></div>
-        <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px]"></div>
+        <div class="h-60 bg-gradient-to-br from-blue-900 to-purple-400 blur-[110px]"></div>
+        <div class="h-40 bg-gradient-to-r from-blue-400 to-sky-400 blur-[110px]"></div>
       </div>
       <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
         <div class="text-center">
@@ -288,69 +287,86 @@ __>
       </div>
     </section>
 
-    <section class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-      <div class="border-y border-gray-100 text-center py-8 md:py-12">
-        <div class="flex flex-wrap justify-center gap-14 md:justify-between lg:gap-24">
-          <img class="h-9 w-auto lg:h-11" src="images/logos/UW.png" loading="lazy" alt="University of Wisconsin-Madison" width="" height="">
-          <img class="h-7 w-auto lg:h-8" src="images/logos/USF.jpg" loading="lazy" alt="University of South Florida" width="" height="">
-          <img class="h-10 w-auto lg:h-12" src="images/logos/UCSB.gif" loading="lazy" alt="University of California, Santa Barbara" width="" height="">
-          <img class="h-10 w-auto lg:h-12" src="images/logos/UIOWA.png" loading="lazy" alt="University of Iowa" width="" height="">
+    <section class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 pt-32">
+      <div class="border-y border-gray-100 text-center py-12 md:py-16">
+        <div class="flex flex-wrap justify-center xl:justify-between items-center gap-14 lg:gap-14">
+          <a href="https://edpsych.education.wisc.edu"><img class="h-12 w-auto lg:h-14" src="images/logos/UW.png" loading="lazy" alt="University of Wisconsin-Madison" width="" height=""></a>
+          <a href="https://www.usf.edu/education/areas-of-study/school-psychology/"><img class="h-8 w-auto lg:h-10" src="images/logos/USF.jpg" loading="lazy" alt="University of South Florida" width="" height=""></a>
+          <a href="https://education.ucsb.edu/academic-programs/dept-of-counseling-clinical-school-psychology/overview"><img class="h-8 w-auto lg:h-10" src="images/logos/UCSB.gif" loading="lazy" alt="University of California, Santa Barbara" width="" height=""></a>
+          <a href="https://scsmh.education.uiowa.edu"><img class="h-12 w-auto lg:h-16" src="images/logos/UIOWA.png" loading="lazy" alt="University of Iowa" width="" height=""></a>
         </div>
       </div>
     </section>
 
-    <footer class="pt-32 pb-8">
+    <footer class="pt-16 sm:pt-20 pb-12 bg-gray-100 border-t border-gray-300 shadow-[inset_0_5px_20px_rgba(0,0,0,0.1)]">
       <div>
         <div class="m-auto space-y-8 px-4 sm:px-12 xl:max-w-6xl xl:px-0">
           <div class="grid grid-cols-8 gap-6 md:gap-0">
-            <div class="col-span-8 md:col-span-2 lg:col-span-3">
-              <div class="flex h-full items-center justify-between gap-6 border-b border-white py-6 md:flex-col md:items-start md:justify-between md:space-y-6 md:border-none md:py-0">
+            <div class="col-span-8 md:col-span-2 lg:col-span-2">
+              <div class="flex h-full items-center justify-between gap-6 py-6 md:flex-col md:items-start md:justify-between md:space-y-6 md:border-none md:py-0">
                 <div>
                   <a aria-label="ampire logo" class="flex items-center" href="index.html">
                     <img src="images/logos/metrics_logo.png" class="h-14"/>
                   </a>
                 </div>
-
-                <div class="flex flex-col text-sm">
-                  <p>© METRICS 2024<br>All right reserved</p>
+              </div>
+            </div>
+            <div class="col-span-8 md:col-span-6 lg:col-span-6">
+              <div class="grid grid-cols-2 pb-4 md:pb-8 sm:grid-cols-2">
+                <div class="flex flex-col lg:flex-row">
+                  <div class="flex flex-col justify-start w-full">
+                    <p class="font-bold">About</p>
+                    <ul class="mt-2 list-inside space-y-2 text-sm">
+                      <li>
+                        <a href="about-us/index.html">About us</a>
+                      </li>
+                      <li>
+                        <a href="about-us/index.html#meet-our-team">Meet our team</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex flex-col justify-start w-full mt-8 lg:mt-0">
+                    <p class="font-bold">Events</p>
+                    <ul class="mt-2 list-inside space-y-2 text-sm">
+                      <li>
+                        <a href="events/index.html">Webinars</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <div class="flex flex-col justify-start w-full">
+                    <p class="font-bold">Resources</p>
+                    <ul class="mt-2 list-inside space-y-2 text-sm">
+                      <li>
+                        <a href="#resources">Videos</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex flex-col justify-start w-full mt-8 lg:mt-0">
+                    <p class="font-bold">Support</p>
+                    <ul class="mt-2 list-inside space-y-2 text-sm">
+                      <li>
+                        <a href="support/index.html">Technical Assistance<br/>Request Form</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-span-8 md:col-span-6 lg:col-span-5">
-              <div class="grid grid-cols-2 gap-6 pb-16 sm:grid-cols-3 md:pl-16">
-                <div>
-                  <h2 class="text-base font-medium">
-                    <a href="about-us/index.html">About us</a>
-                  </h2>
-                  <ul class="mt-4 list-inside space-y-4">
-                    <li>
-                      <a href="about-us/index.html#meet-our-team" class="text-sm duration-100 hover:text-primary">Meet our team</a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 class="text-base font-medium">Resources</h2>
-                  <ul class="mt-4 list-inside space-y-4">
-                    <li>
-                      <a href="#resources" class="text-sm duration-100 hover:text-primary">Webinars</a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 class="text-base font-medium">Support</h2>
-                  <ul class="mt-4 list-inside space-y-4">
-                    <li>
-                      <a href="support/index.html" class="text-sm duration-100 hover:text-primary">Contact us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+          </div>
+          <div>
+            <div class="text-sm pb-4">
+              <p><span class="font-bold">Need help?</span> Contact us at</p>
+              <p class="pt-1"><a href="mailto:support@metricscenter.org" class="underline decoration-dotted">support@metricscenter.org</a></p>
+            </div>
+            <div class="text-sm border-t border-gray-200 pt-4">
+              <p><span class="font-bold">METRICS</span> &#160; © 2024 &#160; • &#160; All rights reserved</p>
             </div>
           </div>
         </div>
       </div>
     </footer>
-
 
   </body>
 </html>
