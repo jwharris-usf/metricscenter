@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Breadcrumbs from './Breadcrumbs'
+import { Button } from "@/components/ui/button"
 
 interface HeroProps {
   type: string
@@ -30,13 +31,15 @@ const Hero: FC<HeroProps> = ({ type, title }) => {
             </div>
           </section>
 
-          <Breadcrumbs />
+{/*          <Breadcrumbs />*/}
           
           <section className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 pt-4 text-sm pb-20">
-            <a href="../index.html">Home</a> > About us
+            <a href="../index.html">Home</a> &gt; About us
           </section>
         </>
       )}
+      <Button variant="outline">Button</Button>
+
     </div>
   )
 }
