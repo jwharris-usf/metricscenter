@@ -1,4 +1,4 @@
-import Hero from "../components/ui/Hero";
+  import Hero from "../components/ui/Hero";
 import BioCard from "../components/ui/BioCard";
 
 async function fetchBioCards() {
@@ -8,7 +8,7 @@ async function fetchBioCards() {
     }
   }
   try {
-    const res = await fetch("http://localhost:1337/api/about-us?populate[bio_card][populate][photo][populate]=true&populate[bio_card][populate][photo][fields][0]=name&populate[bio_card][populate][photo][fields][1]=url", options)
+    const res = await fetch(`${process.env.STRAPI_API_DOMAIN}` + "/api/about-us?populate[bio_card][populate][photo][populate]=true&populate[bio_card][populate][photo][fields][0]=name&populate[bio_card][populate][photo][fields][1]=url", options)
     const response = await res.json()
     return response
   } catch (err) {

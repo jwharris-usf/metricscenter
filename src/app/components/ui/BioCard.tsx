@@ -3,7 +3,7 @@
 import React from 'react'
 
 const BioCard = ({bioCard}:any) => {
-  const imageUrl = "http://127.0.0.1:1337" + bioCard.photo.data.attributes.url;
+  const imageUrl = bioCard.photo.data.attributes.url;
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-8 py-12 shadow-xl shadow-gray-300/75 sm:p-12 mt-20">
       <div className="-mt-[6.2em]">
