@@ -8,7 +8,7 @@ async function fetchBioCards() {
     }
   }
   try {
-    const res = await fetch(`${process.env.STRAPI_API_DOMAIN}` + "/api/about-us?populate[bio_card][populate][photo][populate]=true&populate[bio_card][populate][photo][fields][0]=name&populate[bio_card][populate][photo][fields][1]=url", options)
+    const res = await fetch(`${process.env.STRAPI_API_DOMAIN}` + "/api/about-us?populate[bio_card][populate][photo][populate]=true&populate[bio_card][populate][photo][fields][0]=name&populate[bio_card][populate][photo][fields][1]=url&populate[blocks][populate]=true", options)
     const response = await res.json()
     return response
   } catch (err) {
@@ -16,7 +16,7 @@ async function fetchBioCards() {
   }
 }
 
-export default async function Home() {
+export default async function AboutUs() {
   const bioCards = await fetchBioCards()
   return (
     <>
@@ -107,7 +107,7 @@ export default async function Home() {
           <div className="text-center">
             <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl">Meet our team</h2>
           </div>
-          <div className="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid grid-flow-row auto-rows-fr gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
 
             {bioCards.data.attributes.bio_card.map((bioCard:any) => (
               <div key={bioCard.id}>

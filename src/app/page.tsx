@@ -1,6 +1,23 @@
 import Hero from "./components/ui/Hero";
+import ResourceCard from "./components/ui/ResourceCard";
 
-export default function Home() {
+async function fetchResourceCards() {
+  const options = {
+    headers: {
+      Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`
+    }
+  }
+  try {
+    const res = await fetch(`${process.env.STRAPI_API_DOMAIN}` + "/api/home?populate[resource_card][populate][thumbnail][populate]=true&populate[resource_card][populate][thumbnail][fields][0]=name&populate[resource_card][populate][thumbnail][fields][1]=url&populate[blocks][populate]=true", options)
+    const response = await res.json()
+    return response
+  } catch (err) {
+    console.error(err)
+  }
+}
+
+export default async function Home() {
+  const resourceCards = await fetchResourceCards()
   return (
     <>
       <section>
@@ -26,7 +43,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="mt-8">
-                      <a href="about-us/index.html" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
+                      <a href="/about-us" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
                         Learn more
                       </a>
                     </div>
@@ -67,56 +84,13 @@ export default function Home() {
           </div>
 
           <div className="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12">
-              <div className="space-y-12">
-                <img src="images/icon-mov.png" className="mx-auto h-14 w-auto" width="512" height="512" alt="Movie icon" />
-                <div className="space-y-6">
-                  <p className="text-gray-400 text-sm">February 8, 2024</p>
-                  <p className="text-xl">
-                    <a href="https://app.smartsheet.com/b/form/c340dc71307d43bc8a847139079ddb19">METRICS Interactive Webinar: Recruitment of School Mental Health Professionals</a>
-                  </p>
-                  <p>
-                    <a href="https://app.smartsheet.com/b/form/c340dc71307d43bc8a847139079ddb19" className="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 py-2">
-                      Watch
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12">
-              <div className="space-y-12">
-                <img src="images/icon-mov.png" className="mx-auto h-14 w-auto" width="512" height="512" alt="Movie icon" />
-                <div className="space-y-6">
-                  <p className="text-gray-400 text-sm">January 10, 2024</p>
-                  <p className="text-xl">
-                    <a href="resources/video1.html">Mental Health Evaluation, Training, Research, and Innovation Center for Schools (METRICS) - Meet & Greet</a>
-                  </p>
-                  <p>
-                    <a href="resources/video1.html" className="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 py-2">
-                      Watch
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12">
-              <div className="space-y-12">
-                <img src="images/icon-mov.png" className="mx-auto h-14 w-auto" width="512" height="512" alt="Movie icon" />
-                <div className="space-y-6">
-                  <p className="text-gray-400 text-sm">January 5, 2024</p>
-                  <p className="text-xl">
-                    <a href="resources/video2.html">School-Based Mental Health Services Grant Program - Annual Performance Report Overview</a>
-                  </p>
-                  <p>
-                    <a href="resources/video2.html" className="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 py-2">
-                      Watch
-                    </a>
-                  </p>
-                </div>
+            {resourceCards.data.attributes.resource_card.map((resourceCard:any) => (
+              <div key={resourceCard.id}>
+                <ResourceCard resourceCard={resourceCard} />
               </div>
-            </div>
+            ))}
+
           </div>
         </div>
       </section>
