@@ -185,13 +185,54 @@ __>
 -->
 
     <section class="pt-20 md:pt-32">
+      <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 flex flex-col lg:flex-row justify-between">
+        <div class="lg:w-1/2 lg:pr-10">
+          <h2 class="text-4xl font-bold">Explore grant funded projects</h2>
+          <p class="pt-5">
+            Visit our Interactive Project Map to learn more about School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the county.
+          </p>
+          <div class="mt-8">
+            <a href="about-us/interactive-project-map.html" class="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div class="lg:border border-gray-200 mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
+          <a href="about-us/interactive-project-map.html">
+            <img src="images/interactive-map-thumbnail.png" class="h-52 lg:h-72 w-auto lg:w-full opacity-60 hover:opacity-90 border-none" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-20 md:pt-32">
       <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
         <div class="text-center">
           <h2 class="text-3xl font-bold md:text-4xl xl:text-5xl">About us</h2>
         </div>
         <div class="mt-10 lg:mt-20">
           <div class="gap-6 flex flex-col lg:flex-row">
-            <div class="flex order-2 lg:order-1 align-center lg:w-1/2">
+
+            <!-- Default - hidden -->
+            <div class="hidden lg:block flex flex-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 lg:w-1/2 md:overflow-visible md:px-0">
+              <div class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200">
+                <div class="h-[32rem]">
+                  <div class="absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
+                    <img src="images/student-study-textbook.png" class="mx-auto h-30 w-96 rounded-t-xl border object-cover object-top shadow-2xl sm:h-[28rem]" alt="Mental health colab" loading="lazy" width="850" height="1780">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- >=lg - block -->
+            <div class="flex lg:hidden justify-center lg:mt-12 overflow-hidden p-5">
+              <div class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200">
+                <div class="flex justify-center overflow-hidden p-8">
+                  <img src="images/student-study-textbook.png" class="rounded-lg" alt="Mental health colab" loading="lazy" width="" height="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex align-center lg:w-1/2 pl-8">
               <div>
                 <div>
                   <p class="mt-4">
@@ -210,24 +251,7 @@ __>
                 </div>
               </div>
             </div>
-            <!-- Default - hidden -->
-            <div class="hidden lg:block flex flex-m-4 order-1 lg:order-2 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 lg:w-1/2 md:overflow-visible md:px-0">
-              <div class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200">
-                <div class="h-[32rem]">
-                  <div class="absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
-                    <img src="images/mental-health-colab.jpg" class="mx-auto h-30 w-96 rounded-t-xl border object-cover object-top shadow-2xl sm:h-[28rem]" alt="Mental health colab" loading="lazy" width="850" height="1780">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- >=lg - block -->
-            <div class="flex lg:hidden order-1 lg:order-2 justify-center lg:mt-12 overflow-hidden p-5">
-              <div class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200">
-                <div class="flex justify-center overflow-hidden p-8">
-                  <img src="images/mental-health-colab.jpg" class="rounded-lg" alt="Mental health colab" loading="lazy" width="" height="">
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@
       gtag('js', new Date());
       gtag('config', 'G-3HKQL6E0DP');
     </script>
-    <title>METRICS - Events</title>
+    <title>METRICS - Interactive Project Map</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -59,71 +59,51 @@
       </nav>
     </header>
 
-    <section class="hero-secondary pt-40 pb-20 bg-gray-100">
+    <section id="home" class="pt-40 pb-20 bg-gray-100">
       <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
         <h1 class="font-black text-5xl md:text-7xl">
-          Events
+          Interactive Project Map
         </h1>
       </div>
     </section>
 
     <section class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 pt-4 text-sm pb-20">
-      <a href="../index.html">Home</a> > Events
+      <a href="../index.html">Home</a> > <a href="../about-us/index.html">About us</a> > Interactive Project Map
     </section>
 
-    <section>
+    <section id="about-us">
       <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
 
-        <div class="flex flex-col">
-          <div class="flex w-full h-80">
-            <img src="../images/webinar-laptop.jpg" class="object-cover rounded-md opacity-50 hover:opacity-75 transition duration-500" alt="METRICS interactive webinar" loading="lazy" width="100%">
-          </div>
-          <div class="flex flex-col py-10">
-            <div class="flexflex-col">
-              <div class="w-full">
-                <h1 class="font-normal text-4xl pb-6">Retention of School Mental Health Professionals</h1>
-                <p>Date: <strong>April 18th, 2024</strong></p>
-                <p class="pt-2">Time: <strong>11:00am - 12:00pm CST</strong></p>
-              </div>
-              <div class="pt-8">
-                <a href="https://uwmadison.zoom.us/meeting/register/tJYod-GrrT0sG9zriGTn_uRwdY5Nb4AigmsI#/registration" class="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-md px-4 py-2">
-                  Register to attend
-                </a>
-              </div>
+        <div class="pb-4">
+          <!--<h3 class="text-3xl">Explore grant projects</h3>-->
+          <p>Use the interactive map to explore and learn more about the different School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the United States.</p>
+          <button class="mt-8 p-4 w-full border border-gray-200 border-x-0 flex justify-between" onclick="document.getElementById('helpful-tips').style.display='block';">
+            <div>
+              <strong><a>Helpful tips to explore and search for particular projects</a></strong>
             </div>
+            <div>
+              <strong>＋</strong>
+            </div>
+          </button>
+          <div class="border border-gray-200 border-t-0" id="helpful-tips" style="display: none;">
+            <ul class="py-4 list-disc ml-10 mr-12">
+              <li class="pb-2">
+                Colored dots represent different grant types:<br/>
+                <strong class="pl-4">MHSP:</strong> Mental Health Services Professional<br/>
+                <strong class="pl-4">SBMH:</strong> School-Based Mental Health
+              </li>
+              <li class="pb-2"><strong>Filter by grant type:</strong> Use the checkboxes on the right of the map to filter projects by grant type.</li>
+              <li class="pb-2"><strong>Search for a location:</strong> Move your mouse over the map and select the 🔍 icon located in the top left corner of the map. Type the city and/or state you are interested in exploring, and press "enter". To return to the full map, select the 🏠 icon located in the top left corner of the map.</li>
+              <li><strong>View project details:</strong> Move your mouse over any of the colored dots on the map to "view details" about a particular project; ie. city, grant number, grantee name, etc.</li>
+            </ul>
           </div>
         </div>
-        <div class="border-t border-gray-100 pt-8">
-          <p class="font-bold">Are you looking for ideas on how to retain school mental health professionals?</p>
-          <p class="font-bold pt-2">Would you like to connect with other grantees?</p>
-        </div>
-        <div class="mt-6">
-          <p>Join us for a <strong>METRICS interactive webinar!</strong></p>
-          <ul class="list-disc list-inside mt-6">
-<!--            <p class="pb-2">We will share strategies related to:</p>-->
-            <li class="pl-4">We will be sharing strategies and ideas for how to retain great school mental health staff once you have hired them.</li>
-            <li class="pl-4">Hear success stories and tips shared by fellow grantee who are increasing their retention.</li>
-          </ul>
-        </div>
-        <p class="pt-6">And, you will have the opportunity to network with other grantees and share successes and challenges.</p>
-        <p class="pt-6">
-          <strong>Registration is required to attend.</strong><br/>
-          <span class="text-sm">Please note: this webinar will be recorded and made available to all grantees following the session.</span>
-        </p>
-        <div class="pt-10">
-          <a href="https://uwmadison.zoom.us/meeting/register/tJYod-GrrT0sG9zriGTn_uRwdY5Nb4AigmsI#/registration" class="text-base btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-md px-20 py-4">
-            Register to attend
-          </a>
-        </div>
-        <p class="text-sm pt-3">
-          You can also copy and paste this url into your browser:
-        </p>
-        <p class="text-sm pt-1">
-          https://uwmadison.zoom.us/meeting/register/tJYod-GrrT0sG9zriGTn_uRwdY5Nb4AigmsI#/registration
-        </p>
-<!--
-        <p>There are no upcoming webinars at this time.</p>
--->
+
+        <!--
+          <script type='module' src='https://prod-useast-b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://prod-useast-b.online.tableau.com/t/metricscenter/views/Metrics_Visualisation_MHSPSBMH_By_State/Dashboard2' width='1512' height='726' hide-tabs toolbar='bottom' ></tableau-viz>
+        -->
+        <div class='tableauPlaceholder' id='viz1711566503305' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;Metrics_Visualisation_MHSPSBMH_By_State_17115602373340&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Metrics_Visualisation_MHSPSBMH_By_State_17115602373340&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;Metrics_Visualisation_MHSPSBMH_By_State_17115602373340&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1711566503305');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
       </div>
     </section>
 
