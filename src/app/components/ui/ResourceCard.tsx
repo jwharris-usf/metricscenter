@@ -14,11 +14,11 @@ const ResourceCard = ({resourceCard}:any) => {
   };
   const date = new Date(resourceCard.date).toLocaleDateString("en-US", dateOptions);
   return (
-    <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12">
+    <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12 grow">
       <div>
-        <div>
+        <div className="border border-gray-200">
           <a href={resourceCard.url} className="relative flex items-center">
-            <img src={imageUrl} className="opacity-25" height="100%" width="100%" alt={resourceCard.name} />
+            <img src={imageUrl} className="opacity-25 object-cover h-[125px]" height="100%" width="100%" alt={resourceCard.name} />
             <BsPlayCircle className="h-14 w-full text-brand-blue absolute" />
           </a>
         </div>

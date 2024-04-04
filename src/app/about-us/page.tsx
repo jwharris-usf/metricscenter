@@ -107,10 +107,10 @@ export default async function AboutUs() {
           <div className="text-center">
             <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl">Meet our team</h2>
           </div>
-          <div className="mt-16 grid grid-flow-row auto-rows-fr gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
             {bioCards.data.attributes.bio_card.map((bioCard:any) => (
-              <div key={bioCard.id}>
+              <div key={bioCard.id} className="flex">
                 <BioCard bioCard={bioCard} />
               </div>
             ))}

@@ -83,10 +83,10 @@ export default async function Home() {
             <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl">Resources</h2>
           </div>
 
-          <div className="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
             {resourceCards.data.attributes.resource_card.map((resourceCard:any) => (
-              <div key={resourceCard.id}>
+              <div key={resourceCard.id} className="flex">
                 <ResourceCard resourceCard={resourceCard} />
               </div>
             ))}
