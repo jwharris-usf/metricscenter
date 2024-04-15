@@ -28,8 +28,8 @@ export default function InteractiveMap() {
                   <strong className="pl-4">SBMH:</strong> School-Based Mental Health
                 </li>
                 <li className="pb-2"><strong>Filter by grant type:</strong> Use the checkboxes on the right of the map to filter projects by grant type.</li>
-                <li className="pb-2"><strong>Search for a location:</strong> Move your mouse over the map and select the 🔍 icon located in the top left corner of the map. Type the city and/or state you are interested in exploring, and press "enter". To return to the full map, select the 🏠 icon located in the top left corner of the map.</li>
-                <li><strong>View project details:</strong> Move your mouse over any of the colored dots on the map to "view details" about a particular project; ie. city, grant number, grantee name, etc.</li>
+                <li className="pb-2"><strong>Search for a location:</strong> Move your mouse over the map and select the 🔍 icon located in the top left corner of the map. Type the city and/or state you are interested in exploring, and press &quote;enter&quot;. To return to the full map, select the 🏠 icon located in the top left corner of the map.</li>
+                <li><strong>View project details:</strong> Move your mouse over any of the colored dots on the map to &quot;view details&quot; about a particular project; ie. city, grant number, grantee name, etc.</li>
               </ul>
             </div>
           </div>
