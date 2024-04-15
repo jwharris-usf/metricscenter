@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 const Footer = () => {
@@ -14,7 +16,7 @@ const Footer = () => {
         </div>
       </section>
 
-      <footer className="pt-8 md:pt-16 pb-12 bg-gray-100 border-t border-gray-300 shadow-[inset_0_5px_20px_rgba(0,0,0,0.1)]">
+      <footer className="pt-12 md:pt-20 pb-12 bg-gray-100 border-t border-gray-300 shadow-[inset_0_5px_20px_rgba(0,0,0,0.1)]">
         <div>
           <div className="m-auto space-y-8 px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div className="grid grid-cols-8 gap-6 md:gap-0">
@@ -53,7 +55,7 @@ const Footer = () => {
                       <p className="font-bold">Resources</p>
                       <ul className="mt-2 list-inside space-y-2 text-sm">
                         <li>
-                          <a href="/resources">Videos</a>
+                          <a href="/#resources">Videos</a>
                         </li>
                       </ul>
                     </div>

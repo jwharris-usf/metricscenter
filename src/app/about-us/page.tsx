@@ -20,11 +20,25 @@ export default async function AboutUs() {
   const bioCards = await fetchBioCards()
   return (
     <>
-      <section>
-        <Hero type={'Secondary'} title={'About us'} />
+      <Hero type={'Secondary'} title={'About us'} />
+
+      <section id="metrics" className="pt-24">
+        <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl">METRICS</h2>
+            <p className="text-xl pt-3">
+              Mental Health Evaluation, Training, Research, and Innovation Center for Schools
+            </p>
+            <p className="pt-4 md:w-2/3 mx-auto italic font-bold">
+              <span className="text-4xl text-gray-300 relative top-[5px]">❝ </span>
+              K-12 student access to critical mental health services in high-need schools by addressing the shortage of school-based mental health professionals.
+              <span className="text-4xl text-gray-300 leading-6 relative top-[5px]">❞</span>
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section id="about-us">
+      <section id="about-us" className="pt-28">
         <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
           <div className="gap-6 flex flex-col lg:flex-row">
 
@@ -33,7 +47,7 @@ export default async function AboutUs() {
               <div className="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200">
                 <div className="h-[32rem]">
                   <div className="absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
-                    <img src="/images/mental-health-colab.jpg" className="mx-auto h-30 w-96 rounded-t-xl border object-cover object-top shadow-2xl sm:h-[28rem]" alt="Mental health colab" loading="lazy" width="850" height="1780" />
+                    <img src="/images/student-study-textbook.png" className="mx-auto h-30 w-96 rounded-t-xl border object-cover object-top shadow-2xl sm:h-[28rem]" alt="Student studying with textbook" loading="lazy" width="850" height="1780" />
                   </div>
                 </div>
               </div>
@@ -42,7 +56,7 @@ export default async function AboutUs() {
             <div className="flex lg:hidden justify-center lg:mt-12 overflow-hidden p-5">
               <div className="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200">
                 <div className="flex justify-center overflow-hidden p-8">
-                  <img src="/images/mental-health-colab.jpg" className="rounded-lg" alt="Mental health colab" loading="lazy" width="" height="" />
+                  <img src="/images/student-study-textbook.png" className="rounded-lg" alt="Student studying with textbook" loading="lazy" width="" height="" />
                 </div>
               </div>
             </div>
@@ -50,6 +64,9 @@ export default async function AboutUs() {
             <div className="flex align-center lg:w-1/2 pl-0 lg:pl-8">
               <div>
                 <div>
+                  <h5 className="text-2xl mt-4 font-black">
+                    Prioritizing training more school-based mental health providers
+                  </h5>
                   <p className="mt-4">
                     <strong>METRICS</strong> supports federally-funded grantees who are dedicated to addressing the national shortage of school-based mental health practitioners. These grantees received funding from the US Department of Education for either a School Based Mental Health Services (SBMH) or a Mental Health Service Professional (MHSP) project to <span className="font-bold italic">recruit, train, and retain</span> a strong mental health workforce in our K-12 schools across the country. <strong>METRICS</strong> disseminates best-practice resources, provides individual grant assistance, and helps grantees ensure that they are meeting their targets, so that these grantees can continually improve as they grow the next generation of school-based mental health practitioners.
                   </p>
@@ -64,22 +81,23 @@ export default async function AboutUs() {
           <div className="gap-6 flex flex-col lg:flex-row mt-8 lg:mt-20">
             <div className="flex align-center lg:w-1/2 pr-0 lg:pr-8">
               <div>
-                <div>
-                  <p className="mt-4 font-bold">
-                    METRICS: Building Stronger Training Programs
-                  </p>
-                  <ol className="list-decimal list-inside mt-5">
-                    <li className="pb-4">
-                      Provide individualized assistance
-                    </li>
-                    <li className="pb-4">
-                      Collect and share best practices. Provide technical assistance to grantees through a tiered approach that includes universal support to all, targeted support on select topics for subsets of grantees, and intensive support for individual grantees. Disseminate best practices in credentialing, recruiting, training and developing, and retaining school-based mental health services providers
-                    </li>
-                    <li>
-                      Analyze data and outcomes. Support high-quality grantee data collection and analysis so that programs can continually improve at training the next generation
-                    </li>
-                  </ol>
-                </div>
+                <h5 className="text-2xl mt-4 font-black">
+                  Building stronger training programs
+                </h5>
+                <ol className="list-decimal list-inside mt-5">
+                  <li className="pb-4">
+                    <strong>Provide individualized assistance</strong><br/>
+                    Provide technical assistance to grantees through a tiered approach that includes universal support to all, targeted support on select topics for subsets of grantees, and intensive support for individual grantees.
+                  </li>
+                  <li className="pb-4">
+                    <strong>Collect and share best practices</strong><br/>
+                    Disseminate best practices in credentialing, recruiting, training and developing, and retaining school-based mental health services providers.
+                  </li>
+                  <li>
+                    <strong>Analyze data and outcomes</strong><br/>
+                    Support high-quality grantee data collection and analysis so that programs can continually improve at training the next generation of school-based mental health providers.
+                  </li>
+                </ol>
               </div>
             </div>
 
@@ -98,14 +116,39 @@ export default async function AboutUs() {
         </div>
       </section>
 
+      <section className="pt-20 md:pt-32">
+        <div className="bg-slate-100 py-20">
+          <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 flex flex-col lg:flex-row justify-between">
+            <div className="lg:w-1/2 lg:pr-10">
+              <h2 className="text-4xl font-black">Explore grant funded projects</h2>
+              <p className="pt-5">
+                Visit our Interactive Project Map to learn more about School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the county.
+              </p>
+              <div className="mt-8">
+                <a href="/about-us/interactive-map" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div className="lg:border border-gray-200 mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
+              <a href="/about-us/interactive-map">
+                <img src="../images/interactive-map-thumbnail.png" className="h-52 lg:h-72 w-auto lg:w-full opacity-60 hover:opacity-90 transition duration-500 border-none" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="relative pt-32" id="meet-our-team">
+{/*
         <div aria-hidden="true" className="absolute inset-0 top-80 grid grid-cols-2 opacity-50">
           <div className="h-60 bg-gradient-to-br from-blue-900 to-purple-400 blur-[110px]"></div>
           <div className="h-60 bg-gradient-to-r from-blue-400 to-sky-400 blur-[110px]"></div>
         </div>
+*/}
         <div className="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
           <div className="text-center">
-            <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl">Meet our team</h2>
+            <h2 className="text-3xl font-black md:text-4xl xl:text-5xl">Meet our team</h2>
           </div>
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
@@ -118,7 +161,6 @@ export default async function AboutUs() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

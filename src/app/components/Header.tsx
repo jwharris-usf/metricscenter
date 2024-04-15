@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 
@@ -12,7 +14,7 @@ const navLinks = [
   },
   {
     title: "Resources",
-    path: "/resources",
+    path: "/#resources",
   },
   {
     title: "Support",
@@ -28,11 +30,11 @@ const Header = () => {
           <div className="flex flex-col md:flex-row items-center justify-between lg:py-4">
             <div>
               <a href="/" aria-label="METRICS logo">
-                <Image className="w-max h-20 lg:h-14 py-6 lg:py-2" src="/images/logos/metrics_logo-full.png" alt={'METRICS logo'} width={640} height={112} />
+                <Image className="w-max h-14 py-4 lg:py-2" src="/images/logos/metrics_logo-full.png" alt={'METRICS logo'} width={640} height={112} />
               </a>
             </div>
             <div>
-              <ul className="font-bold flex text-sm gap-10 md:gap-8 lg:gap-10">
+              <ul className="font-bold flex gap-10 md:gap-8 lg:gap-10 text-sm md:text-base">
                 {navLinks.map((items, index) => (
                   <li key={index}>
                     <a className="hover:text-primary md:px-4" href={items.path}>

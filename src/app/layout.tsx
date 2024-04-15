@@ -3,6 +3,7 @@ import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import VideoModal from "./components/modals/VideoModal";
 
 const RedHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 
@@ -19,9 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={RedHatDisplay.className}>
-        <header><Header/></header>
+        <Header/>
+        <VideoModal />
         {children}
-        <footer><Footer/></footer>
+        <Footer/>
       </body>
     </html>
   );
