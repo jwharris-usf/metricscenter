@@ -12,7 +12,7 @@ export default function InteractiveMap() {
           <div className="pb-4 pt-20">
             {/*<h3 className="text-3xl">Explore grant projects</h3>*/}
             <p>Use the interactive map to explore and learn more about the different School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the United States.</p>
-            <Button variant="link" className="mt-8 p-4 w-full border border-gray-200 border-x-0 flex justify-between" onClick="document.getElementById('helpful-tips').style.display='block';">
+            <Button variant="link" className="mt-8 p-4 w-full border border-gray-200 border-x-0 flex justify-between">
               <div>
                 <strong><a>Helpful tips to explore and search for particular projects</a></strong>
               </div>
