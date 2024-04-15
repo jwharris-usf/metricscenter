@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { BsPlayBtnFill } from "react-icons/bs";
+import useScript from '@/hooks/useScript';
 
 import {
   Dialog,
@@ -22,6 +23,9 @@ const ResourceCard = ({ resourceCard }: any) => {
     timeZone: "UTC",
   };
   const date = new Date(resourceCard.date).toLocaleDateString("en-US", dateOptions);
+
+  useScript('https://player.vimeo.com/api/player.js');
+
   return (
     <Dialog>
       <DialogTrigger>
@@ -54,8 +58,6 @@ const ResourceCard = ({ resourceCard }: any) => {
           <DialogDescription>
             <div>
               <iframe src={resourceCard.url} allow="autoplay; fullscreen; picture-in-picture" className="w-[70vw] h-[70vh]" title={resourceCard.name} data-ready="true"></iframe>
-              
-              <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
           </DialogDescription>
         </DialogHeader>
