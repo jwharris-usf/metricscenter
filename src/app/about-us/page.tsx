@@ -1,5 +1,7 @@
 import Hero from "../components/ui/Hero";
 import BioCard from "../components/ui/BioCard";
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import { BiSolidQuoteAltRight } from "react-icons/bi";
 
 async function fetchBioCards() {
   const options = {
@@ -29,10 +31,10 @@ export default async function AboutUs() {
             <p className="text-xl pt-3">
               Mental Health Evaluation, Training, Research, and Innovation Center for Schools
             </p>
-            <p className="pt-4 md:w-2/3 mx-auto italic font-bold">
-              <span className="text-4xl text-gray-300 relative top-[5px]">❝ </span>
+            <p className="pt-4 md:w-2/3 mx-auto italic font-bold flex">
+              {/*<BiSolidQuoteAltLeft className="text-7xl text-gray-300 relative top-[-15px]" />*/}
               K-12 student access to critical mental health services in high-need schools by addressing the shortage of school-based mental health professionals.
-              <span className="text-4xl text-gray-300 leading-6 relative top-[5px]">❞</span>
+              {/*<BiSolidQuoteAltRight className="text-7xl text-gray-300 leading-6 relative top-[5px]" />*/}
             </p>
           </div>
         </div>

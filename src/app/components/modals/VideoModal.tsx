@@ -11,8 +11,6 @@ const VideoModal = ({vidTitle}:any, {vidSource}:any) => {
   const bodyContent = (
     <div>
       <iframe src="" allow="autoplay; fullscreen; picture-in-picture" width="1200px" height="200px" title="Mental Health Evaluation, Training, Research, and Innovation Center for Schools (METRICS) - Meet &amp; Greet - January 10, 2024" data-ready="true"></iframe>
-
-      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
   )
 
