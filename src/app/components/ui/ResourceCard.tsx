@@ -28,8 +28,8 @@ const ResourceCard = ({ resourceCard }: any) => {
 
   return (
     <Dialog>
-      <DialogTrigger>
-        <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12 grow text-left">
+      <DialogTrigger className='grow'>
+        <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12 grow h-full text-left">
           <div>
             <div className="border border-gray-200 bg-gray-500 hover:bg-gray-200 transition duration-500">
               <span className="relative flex items-center">

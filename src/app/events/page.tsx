@@ -7,7 +7,7 @@ export default function Events() {
 
       <section className="pt-24">
         <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-
+{/*
           <div className="flex flex-col">
             <div className="flex w-full h-80">
               <img src="../images/webinar-laptop.jpg" className="object-cover rounded-md opacity-50 hover:opacity-75 transition duration-500" alt="METRICS interactive webinar" loading="lazy" width="100%" />
@@ -34,7 +34,7 @@ export default function Events() {
           <div className="mt-6">
             <p>Join us for a <strong>METRICS interactive webinar!</strong></p>
             <ul className="list-disc list-inside mt-6">
-  {/*            <p className="pb-2">We will share strategies related to:</p>*/}
+  ---            <p className="pb-2">We will share strategies related to:</p>---
               <li className="pl-4">We will be sharing strategies and ideas for how to retain great school mental health staff once you have hired them.</li>
               <li className="pl-4">Hear success stories and tips shared by fellow grantee who are increasing their retention.</li>
             </ul>
@@ -55,9 +55,9 @@ export default function Events() {
           <p className="text-sm pt-1">
             https://uwmadison.zoom.us/meeting/register/tJYod-GrrT0sG9zriGTn_uRwdY5Nb4AigmsI#/registration
           </p>
-{/*
-          <p>There are no upcoming webinars at this time.</p>
 */}
+          <p>There are no upcoming webinars at this time.</p>
+
         </div>
       </section>
     </>
