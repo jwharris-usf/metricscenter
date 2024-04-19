@@ -33,7 +33,7 @@ export default function InteractiveMap() {
               </ul>
             </div>
           </div>
-          
+          {/* Interactive map */}
           <iframe src="https://public.tableau.com/views/MHSPSBMH_Locations_By_State_Phase_2/Map_Dashboard?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true"
  width="100%" height="955"></iframe>
 
