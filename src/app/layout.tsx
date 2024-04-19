@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import VideoModal from "./components/modals/VideoModal";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const RedHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 
@@ -25,6 +26,8 @@ export default function RootLayout({
         {children}
         <Footer/>
       </body>
+      {/* https://ospaarmann.medium.com/google-analytics-4-ga4-in-next-js-14-and-react-with-event-tracking-2ceabb00c59a */}
+      <GoogleAnalytics gaId="G-3HKQL6E0DP" />
     </html>
   );
 }
