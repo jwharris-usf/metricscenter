@@ -3,6 +3,7 @@
 import React from 'react'
 import { BsPlayBtnFill } from "react-icons/bs";
 import useScript from '@/hooks/useScript';
+import { Button } from './Button';
 
 import {
   Dialog,
@@ -59,6 +60,19 @@ const ResourceCard = ({ resourceCard }: any) => {
             <div>
               <iframe src={resourceCard.url} allow="autoplay; fullscreen; picture-in-picture" className="w-[70vw] h-[70vh]" title={resourceCard.name} data-ready="true"></iframe>
             </div>
+            { resourceCard.name === 'Retention of School Mental Health Professionals' && (
+              <div className='text-base pb-2'>
+                Download the slides from this webinar:
+                <a href="/images/METRICS-Webinar-Retention-April-2024.pptx" target="_blank">
+                  <Button variant="outline" className='mx-4'>PPT</Button>
+                </a>
+                or
+                <a href="/images/METRICS-Webinar-Retention-April-2024.pdf" target="_blank">
+                  <Button variant="outline" className='mx-4'>PDF</Button>
+                </a>
+              </div>
+            )}
+
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
