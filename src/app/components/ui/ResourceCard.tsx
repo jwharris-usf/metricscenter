@@ -72,7 +72,6 @@ const ResourceCard = ({ resourceCard }: any) => {
                 </a>
               </div>
             )}
-
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
