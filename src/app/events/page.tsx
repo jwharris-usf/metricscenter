@@ -60,7 +60,7 @@ export default function Events() {
 */}
 
           <div>
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGDbYPjT6k/gG2QRMe0ZWkYGjk_XZc3NQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen" width="1200px" height="675px"></iframe>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGDbYPjT6k/gG2QRMe0ZWkYGjk_XZc3NQ/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>
 
         </div>
