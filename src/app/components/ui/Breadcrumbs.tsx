@@ -11,7 +11,7 @@ const Breadcrumbs = () => {
   return (
     <div className='mx-auto px-4 sm:px-12 xl:px-0 xl:max-w-6xl pt-4'>
       <ul className='flex text-gray-700'>
-        <li className='mr-2'>
+        <li className='mr-2' key='home'>
           <Link href={'/'}>Home</Link>
         </li>
         <span>

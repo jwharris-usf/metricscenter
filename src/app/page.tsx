@@ -1,6 +1,6 @@
 import Hero from "./components/ui/Hero";
-import ResourceCard from "./components/ui/ResourceCard";
 import Alert from "./components/ui/Alert";
+import { Badge } from "./components/ui/Badge";
 
 async function fetchAlerts() {
   const options = {
@@ -39,24 +39,27 @@ export default async function Home() {
     <>
       <Hero type={'Primary'} title={'Recruiting, training, and retaining'} subTitle={'METRICS provides support to states, districts, and schools with the goal of increasing students\' access to highly qualified mental health professionals in their schools.'} />
 
-{/*      { alerts && <Alert alert={alerts.data.attributes.alert} /> } */}
+      { alerts && <Alert alert={alerts.data.attributes.alert} /> }
 
       <section className="pt-20 md:pt-32">
         <div className="mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0 flex flex-col lg:flex-row justify-between">
           <div className="lg:w-1/2 lg:pr-10">
-            <h2 className="text-4xl font-black">Explore grant funded projects</h2>
+            <div className="flex items-center">
+              <h2 className="text-4xl font-black">Resources</h2>
+              <Badge variant="success">Updated</Badge>
+            </div>
             <p className="pt-5">
-              Visit our Interactive Project Map to learn more about School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the county.
+              Just launched! Explore our new and improved METRICS resources page. Be sure to check back often as we will be frequently adding helpful resources, recorded webinars, and other information.
             </p>
             <div className="mt-8">
-              <a href="/about-us/interactive-map" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
+              <a href="/resources" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
                 Learn more
               </a>
             </div>
           </div>
-          <div className="lg:border border-gray-200 mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
-            <a href="/about-us/interactive-map">
-              <img src="images/interactive-map-thumbnail.png" className="h-52 lg:h-72 w-auto lg:w-full opacity-60 hover:opacity-90 transition duration-500 border-none" />
+          <div className="mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
+            <a href="/resources">
+              <img src="images/file-types.png" className="h-52 lg:h-72 w-auto lg:w-full border-none" />
             </a>
           </div>
         </div>
@@ -114,27 +117,56 @@ export default async function Home() {
         </div>
       </section>
 
+      <section className="pt-32">
+        <div className="bg-slate-100 py-20">
+          <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 flex flex-col lg:flex-row justify-between">
+            <div className="lg:w-1/2 lg:pr-10">
+              <h2 className="text-4xl font-black">Explore grant funded projects</h2>
+              <p className="pt-5">
+                Visit our Interactive Project Map to learn more about School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the county.
+              </p>
+              <div className="mt-8">
+                <a href="/about-us/interactive-map" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div className="lg:border border-gray-200 mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
+              <a href="/about-us/interactive-map">
+                <img src="../images/interactive-map-thumbnail.png" className="h-52 lg:h-72 w-auto lg:w-full opacity-60 hover:opacity-90 transition duration-500 border-none" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+{/*
       <section className="relative pt-32" id="resources">
+
         <div aria-hidden="true" className="absolute inset-0 top-80 grid grid-cols-2 opacity-50">
           <div className="h-60 bg-gradient-to-br from-blue-900 to-purple-400 blur-[110px]"></div>
           <div className="h-40 bg-gradient-to-r from-blue-400 to-sky-400 blur-[110px]"></div>
         </div>
+*/}
+{/*
         <div className="relative mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0">
           <div className="text-center">
-            <h1 className="text-4xl font-black lg:text-5xl">Resources</h1>
+            <h1 className="text-4xl font-black lg:text-5xl">Connect with us</h1>
           </div>
+          <div className="mt-10 flex gap-8">
+            <div className="lg:border border-gray-200 lg:w-1/3 bg-slate-50 p-4 text-left h-[175px]">
+              Lorem ipsum
+            </div>
+            <div className="lg:border border-gray-200 lg:w-1/3 bg-slate-50">
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            </div>
+            <div className="lg:border border-gray-200 lg:w-1/3 bg-slate-50">
 
-            {resourceCards.data.attributes.resource_card.map((resourceCard:any) => (
-              <div key={resourceCard.id} className="flex">
-                <ResourceCard resourceCard={resourceCard} />
-              </div>
-            ))}
-
+            </div>
           </div>
         </div>
+
       </section>
+*/}
     </>
   );
 }

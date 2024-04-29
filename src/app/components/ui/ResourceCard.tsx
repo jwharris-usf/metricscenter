@@ -41,7 +41,7 @@ const ResourceCard = ({ resourceCard }: any) => {
 
             <div className="pt-4 space-y-6">
               <p className="text-gray-400 text-sm">{date}</p>
-              <p className="text-xl">
+              <p className="text-lg font-semibold">
                 <span>{resourceCard.name}</span>
               </p>
               <p>

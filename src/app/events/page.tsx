@@ -55,8 +55,13 @@ export default function Events() {
           <p className="text-sm pt-1">
             https://uwmadison.zoom.us/meeting/register/tJYod-GrrT0sG9zriGTn_uRwdY5Nb4AigmsI#/registration
           </p>
-*/}
+
           <p>There are no upcoming webinars at this time.</p>
+*/}
+
+          <div>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGDbYPjT6k/gG2QRMe0ZWkYGjk_XZc3NQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen" width="1200px" height="675px"></iframe>
+          </div>
 
         </div>
       </section>

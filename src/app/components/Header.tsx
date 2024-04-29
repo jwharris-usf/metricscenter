@@ -14,7 +14,7 @@ const navLinks = [
   },
   {
     title: "Resources",
-    path: "/#resources",
+    path: "/resources",
   },
   {
     title: "Support",
