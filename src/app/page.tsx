@@ -1,6 +1,9 @@
+'use client'
+
 import Hero from "./components/ui/Hero";
 import Alert from "./components/ui/Alert";
 import { Badge } from "./components/ui/Badge";
+import { Button } from "./components/ui/Button"
 
 async function fetchAlerts() {
   const options = {
@@ -94,20 +97,18 @@ export default async function Home() {
               
               <div className="flex align-center lg:w-1/2 pl-8">
                 <div>
-                  <div>
-                    <p className="mt-4">
-                      <strong>METRICS</strong> is a partnership between the University of Wisconsin-Madison, the University of South Florida, the University of Iowa, and the University of California, Santa Barbara. Together, we are committed to increasing K-12 student access to critical mental health services in their schools by addressing the nationwide shortage of school-based mental health professionals.
-                    </p>
-                    <p className="mt-8">
-                      <strong>METRICS</strong> supports federally-funded grantees who are dedicated to addressing the national shortage of school-based mental health practitioners. These grantees received funding from the US Department of Education for either a School Based Mental Health Services (SBMH) or a Mental Health Service Professional (MHSP) project to <span className="font-bold italic">recruit, train, and retain</span> a strong mental health workforce in our K-12 schools across the country.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="mt-8">
-                      <a href="/about-us" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
-                        Learn more
-                      </a>
-                    </div>
+                  <p className="mt-4">
+                    <strong>METRICS</strong> is a partnership between the University of Wisconsin-Madison, the University of South Florida, the University of Iowa, and the University of California, Santa Barbara. Together, we are committed to increasing K-12 student access to critical mental health services in their schools by addressing the nationwide shortage of school-based mental health professionals.
+                  </p>
+                  <p className="mt-8">
+                    <strong>METRICS</strong> supports federally-funded grantees who are dedicated to addressing the national shortage of school-based mental health practitioners. These grantees received funding from the US Department of Education for either a School Based Mental Health Services (SBMH) or a Mental Health Service Professional (MHSP) project to <span className="font-bold italic">recruit, train, and retain</span> a strong mental health workforce in our K-12 schools across the country.
+                  </p>
+                </div>
+                <div>
+                  <div className="mt-8">
+                    <a href="/about-us" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
+                      Learn more
+                    </a>
                   </div>
                 </div>
               </div>
@@ -139,34 +140,62 @@ export default async function Home() {
           </div>
         </div>
       </section>
-{/*
-      <section className="relative pt-32" id="resources">
 
+      <section className="pt-32" id="connect">
+{/*
         <div aria-hidden="true" className="absolute inset-0 top-80 grid grid-cols-2 opacity-50">
           <div className="h-60 bg-gradient-to-br from-blue-900 to-purple-400 blur-[110px]"></div>
           <div className="h-40 bg-gradient-to-r from-blue-400 to-sky-400 blur-[110px]"></div>
         </div>
 */}
-{/*
-        <div className="relative mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0">
+        <div className="mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0">
           <div className="text-center">
             <h1 className="text-4xl font-black lg:text-5xl">Connect with us</h1>
           </div>
-          <div className="mt-10 flex gap-8">
-            <div className="lg:border border-gray-200 lg:w-1/3 bg-slate-50 p-4 text-left h-[175px]">
-              Lorem ipsum
-            </div>
-            <div className="lg:border border-gray-200 lg:w-1/3 bg-slate-50">
 
-            </div>
-            <div className="lg:border border-gray-200 lg:w-1/3 bg-slate-50">
+          <div className="mt-10 lg:mt-20">
+            <div className="gap-6 flex flex-col lg:flex-row">
+
+              <div className="lg:w-1/2">
+                <div className="h-[450px]">
+                  <div>
+                    <a className="twitter-timeline" data-chrome="noheader, nofooter" data-height="450" data-theme="light" href="https://twitter.com/METRICS_Center?ref_src=twsrc%5Etfw">
+                      Loading Tweets by @METRICS_Center...
+                    </a>
+                    <script async src="https://platform.twitter.com/widgets.js"></script>
+{/*
+                    Scroll to view more
+*/}
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex flex-col align-center lg:w-1/2 pl-8 mt-8 lg:mt-0">
+                <p>
+                  This Mental Health Awareness Month, let&apos;s prioritize well-being.<br/><br/>Join our Community on <strong>X</strong> for <strong>#MHAM2024</strong>.
+                </p>
+                <p className="mt-6">
+                  <a href="https://twitter.com/METRICS_Center?ref_src=twsrc%5Etfw" target="_blank">
+                    <Button variant="default">
+                      Follow us on X
+                    </Button>
+                  </a>
+                </p>
+{/*
+                <div className="mt-8">
+                  <a href="/about-us" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
+                    Learn more
+                  </a>
+                </div>
+*/}
+              </div>
 
             </div>
           </div>
+
         </div>
 
       </section>
-*/}
     </>
   );
 }
