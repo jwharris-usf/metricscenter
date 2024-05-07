@@ -13,7 +13,7 @@ export default function Events() {
               <img src="../images/webinar-laptop.jpg" className="object-cover rounded-md opacity-50 hover:opacity-75 transition duration-500" alt="METRICS interactive webinar" loading="lazy" width="100%" />
             </div>
             <div className="flex flex-col py-10">
-              <div className="flexflex-col">
+              <div className="flex flex-col">
                 <div className="w-full">
                   <h1 className="font-black text-4xl pb-6">Retention of School Mental Health Professionals</h1>
                   <p>Date: <strong>April 18th, 2024</strong></p>
@@ -58,7 +58,14 @@ export default function Events() {
 
           <p>There are no upcoming webinars at this time.</p>
 */}
-
+          <div className="flex flex-col text-center">
+            <h2 className="font-black text-5xl pb-6">May</h2>
+            <p>
+              May is Mental Health Awareness Month! In honor of <strong>#MHWM2024</strong>, we have compiled a month's worth of resources and events.
+              <br/>
+              Please check out the calendar below, share the resources, and <strong>#breakthestigma</strong>!
+            </p>
+          </div>
           <div>
             <iframe loading="lazy" src="https://www.canva.com/design/DAGD1IL-kLI/XEsnXVTnRXNkcsAtYjoJiA/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>

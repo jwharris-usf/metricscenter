@@ -94,18 +94,18 @@ export default async function Resources() {
           <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
-                METRICS vs DOE - Who should I contact?
+                METRICS or DOE - Who should I contact?
                 <GrDocumentPdf size={20} className="ml-3"/>
               </div>
               <div className="text-sm text-gray-500 mt-1">I have a question about my SBMH/MHSP grant. Who should I contact?</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/METRICS-vs-DOE-onepager-2024.04.22.pdf" target="_blank">
+              <a className="m-4" href="/images/METRICS-or-DOE-onepager-20240422.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/METRICS-vs-DOE-onepager-2024.04.22.pdf" download target="_blank">
+              <a className="m-4" href="/images/METRICS-or-DOE-onepager-20240422.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
