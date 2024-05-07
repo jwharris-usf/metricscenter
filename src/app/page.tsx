@@ -172,7 +172,7 @@ export default async function Home() {
               
               <div className="flex flex-col align-center lg:w-1/2 pl-8 mt-8 lg:mt-0">
                 <p>
-                  This Mental Health Awareness Month, let's prioritize well-being.<br/><br/>Join our Community on <strong>X</strong> for <strong>#MHAM2024</strong>.
+                  This Mental Health Awareness Month, let&apos;s prioritize well-being.<br/><br/>Join our Community on <strong>X</strong> for <strong>#MHAM2024</strong>.
                 </p>
                 <p className="mt-6">
                   <a href="https://twitter.com/METRICS_Center?ref_src=twsrc%5Etfw" target="_blank">

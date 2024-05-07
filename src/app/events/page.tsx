@@ -61,7 +61,7 @@ export default function Events() {
           <div className="flex flex-col text-center">
             <h2 className="font-black text-5xl pb-6">May</h2>
             <p>
-              May is Mental Health Awareness Month! In honor of <strong>#MHWM2024</strong>, we have compiled a month's worth of resources and events.
+              May is Mental Health Awareness Month! In honor of <strong>#MHWM2024</strong>, we have compiled a month&apos;s worth of resources and events.
               <br/>
               Please check out the calendar below, share the resources, and <strong>#breakthestigma</strong>!
             </p>
