@@ -95,7 +95,7 @@ export default async function Home() {
                 </div>
               </div>
               
-              <div className="flex align-center lg:w-1/2 pl-8">
+              <div className="flex flex-col align-center lg:w-1/2 pl-8">
                 <div>
                   <p className="mt-4">
                     <strong>METRICS</strong> is a partnership between the University of Wisconsin-Madison, the University of South Florida, the University of Iowa, and the University of California, Santa Barbara. Together, we are committed to increasing K-12 student access to critical mental health services in their schools by addressing the nationwide shortage of school-based mental health professionals.
