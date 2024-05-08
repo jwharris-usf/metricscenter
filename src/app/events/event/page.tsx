@@ -20,7 +20,7 @@ export default function Events() {
                   <p className="pt-2">Time: <strong>12:00pm - 1:00pm CST</strong></p>
                 </div>
                 <div className="pt-8">
-                  <a href="bit.ly/ResearchLunchMay2024" className="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-md px-4 py-2">
+                  <a href="https://uiowa.qualtrics.com/jfe/form/SV_eA5OUIBto8jyES2" className="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-md px-4 py-2">
                     Register to attend
                   </a>
                 </div>
@@ -42,7 +42,7 @@ export default function Events() {
             <span className="text-sm">Please note: this webinar will be recorded and made available to all grantees following the session.</span>
           </p>
           <div className="pt-10">
-            <a href="bit.ly/ResearchLunchMay2024" className="text-base btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-md px-20 py-4">
+            <a href="https://uiowa.qualtrics.com/jfe/form/SV_eA5OUIBto8jyES2" className="text-base btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-md px-20 py-4">
               Register to attend
             </a>
           </div>
@@ -50,7 +50,7 @@ export default function Events() {
             You can also copy and paste this url into your browser:
           </p>
           <p className="text-sm pt-1">
-          bit.ly/ResearchLunchMay2024
+          https://uiowa.qualtrics.com/jfe/form/SV_eA5OUIBto8jyES2
           </p>
 
         </div>
