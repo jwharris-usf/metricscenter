@@ -59,23 +59,23 @@ export default async function Resources() {
                       <div className="mt-2 mb-8 text-gray-600">
                         <p>This practice brief provides educators with information and resources on suicide prevention, intervention, and postvention that is evidence-based and applicable to the K-12 school setting.</p>
                         <div className="font-bold flex mt-1">
-                          <a className="flex" href="https://scsmh.education.uiowa.edu/practice-brief/k-12-suicide-prevention/" target="_blank">View website <RxOpenInNewWindow size={18} className="ml-1 relative top-[2px]"/></a>
+                          <a className="flex" href="https://scsmh.education.uiowa.edu/practice-brief/k-12-suicide-prevention/" target="_blank">Visit website <RxOpenInNewWindow size={18} className="ml-1 relative top-[2px]"/></a>
                         </div>
                       </div>
                       <div className="flex gap-4">
                         <div className="flex justify-between flex-col xl:flex-row w-full gap-4 xl:gap-0">
-                          <Button variant="outline">
-                            <div className="flex">
+                          <a href="https://youtu.be/2vCVScivgQk" target="_blank">
+                            <Button variant="outline">                              
                               <RxVideo size={20} className="mr-4"/>
-                              <a href="https://youtu.be/2vCVScivgQk" target="_blank">Watch video</a>
-                            </div>
-                          </Button>
-                          <Button variant="outline">
-                            <div className="flex">
+                              Watch video
+                            </Button>
+                          </a>
+                          <a href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" target="_blank">
+                            <Button variant="outline">
                               <GrDocumentPdf size={20} className="mr-4"/>
-                              <a href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" target="_blank">View practice brief</a>
-                            </div>
-                          </Button>
+                              View practice brief
+                            </Button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -83,9 +83,11 @@ export default async function Resources() {
                 </div>
 
                 <div className="-mx-6 h-100 rounded-t-2xl border-r border-t border-l pr-2 pt-2 pl-2 lg:mx-0 lg:w-2/3 lg:rounded-tr-none lg:rounded-tl-2xl lg:border-r-0 lg:pr-0 lg:pb-0">
-                  <a href="https://youtu.be/2vCVScivgQk" target="_blank">
-                    <img src="images/prevention-brief-video-thumbnail.png" className="h-full rounded-tl-xl rounded-tr-xl lg:rounded-tr-none border object-cover object-center opacity-90 hover:opacity-100 duration-500" alt="Prevention brief video thumbnail" loading="lazy" width="1850" height="1780" />
-                  </a>
+{/*                  <div className="bg-[url('/images/prevention-brief-video-thumbnail.png')] bg-[size:100%] bg-center bg-no-repeat hover:bg-[size:105%] rounded-2xl duration-500 transition-all transform h-full">*/}
+                    <a href="https://youtu.be/2vCVScivgQk" target="_blank">
+                    <img src="images/prevention-brief-video-thumbnail.png" className="h-full rounded-tl-xl rounded-tr-xl lg:rounded-tr-none border object-cover object-center opacity-80 hover:opacity-100 duration-500" alt="Prevention brief video thumbnail" loading="lazy" width="1850" height="1780" />
+                    </a>
+{/*                  </div>*/}
                 </div>
               </div>
             </div>
@@ -283,18 +285,18 @@ export default async function Resources() {
           <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
-                METRICS or DOE - Who should I contact?
+                METRICS or ED - Who should I contact?
                 <GrDocumentPdf size={20} className="ml-3"/>
               </div>
               <div className="text-sm text-gray-500 mt-1">I have a question about my SBMH/MHSP grant. Who should I contact?</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/METRICS-or-DOE-onepager-20240422.pdf" target="_blank">
+              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/METRICS-or-DOE-onepager-20240422.pdf" download target="_blank">
+              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
