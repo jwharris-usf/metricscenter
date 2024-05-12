@@ -20,23 +20,7 @@ async function fetchAlerts() {
   }
 }
 
-async function fetchResourceCards() {
-  const options = {
-    headers: {
-      Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`
-    }
-  }
-  try {
-    const res = await fetch(`${process.env.STRAPI_API_DOMAIN}` + "/api/home?populate[resource_card][populate][thumbnail][populate]=true&populate[resource_card][populate][thumbnail][fields][0]=name&populate[resource_card][populate][thumbnail][fields][1]=url&populate[blocks][populate]=true", options)
-    const response = await res.json()
-    return response
-  } catch (err) {
-    console.error(err)
-  }
-}
-
 export default async function Home() {
-  const resourceCards = await fetchResourceCards()
   const alerts = await fetchAlerts()
   return (
     <>
