@@ -50,7 +50,7 @@ export default async function Resources() {
                       </h2>
                     </div>
                     <div className="pl-4">
-                      <p className="p-4">Hosted by Kari Vogelgesang, Michael Furlong and Erin Dowdy delve into MTSS (Multi-Tiered System of Supports) and its impact on students' holistic development, encouraging educators to pause and reconsider the WHY behind MTSS, and inspire them to reflect on their practice, embrace a student-centered approach, and champion the journey of self-determination for every student.</p>
+                      <p className="p-4">Hosted by Kari Vogelgesang, Michael Furlong and Erin Dowdy delve into MTSS (Multi-Tiered System of Supports) and its impact on students&apos; holistic development, encouraging educators to pause and reconsider the WHY behind MTSS, and inspire them to reflect on their practice, embrace a student-centered approach, and champion the journey of self-determination for every student.</p>
                     </div>
                   </div>
                   <div className="pl-4 pt-2 pb-6 flex items-center">
