@@ -59,7 +59,7 @@ export default function Events() {
           <p>There are no upcoming webinars at this time.</p>
 */}
           <div className="flex flex-col text-center">
-            <h2 className="font-black text-5xl pb-6">May</h2>
+            <h2 className="font-black text-5xl pb-6">July 2024</h2>
             <p>
               July is BIPOC Mental Health Awareness Month! We have compiled a month&apos;s worth of resources and events.
               <br/>
