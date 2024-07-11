@@ -61,13 +61,13 @@ export default function Events() {
           <div className="flex flex-col text-center">
             <h2 className="font-black text-5xl pb-6">May</h2>
             <p>
-              May is Mental Health Awareness Month! In honor of <strong>#MHWM2024</strong>, we have compiled a month&apos;s worth of resources and events.
+              July is BIPOC Mental Health Awareness Month! We have compiled a month&apos;s worth of resources and events.
               <br/>
-              Please check out the calendar below, share the resources, and <strong>#breakthestigma</strong>!
+              Please check out the calendar below and share the resources. 
             </p>
           </div>
           <div>
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGD1IL-kLI/XEsnXVTnRXNkcsAtYjoJiA/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGJWJka9Qk/lND31oC6oloJmuLgobxBzQ/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>
 
         </div>
