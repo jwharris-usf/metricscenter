@@ -61,7 +61,7 @@ export default function Events() {
           <div className="flex flex-col text-center">
             <h2 className="font-black text-5xl pb-6">August 2024</h2>
             <p>
-              August is "Back to School" month! We have compiled a month&apos;s worth of resources and events.
+              August is &quot;Back to School&quot; month! We have compiled a month&apos;s worth of resources and events.
               <br/>
               Please check out the calendar below and share the resources. 
             </p>
