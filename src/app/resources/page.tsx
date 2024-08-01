@@ -40,7 +40,7 @@ export default async function Resources() {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 lg:w-1/3 p-2">
                   <div className="overflow-hidden border rounded-xl md:h-full">
-                    <a href="https://youtu.be/yO2MT3-kLYY?si=loWtxkfewlpmbdC4" target="_blank" onClick={() => sendGAEvent({ event: 'linkClicked', value: 'Reimagining MTSS: A Pathway to Whole School Well-Being' })}>
+                    <a href="https://youtu.be/yO2MT3-kLYY?si=loWtxkfewlpmbdC4" target="_blank" onClick={() => sendGAEvent('event', 'linkClicked', { value: 'Reimagining MTSS: A Pathway to Whole School Well-Being' })}>
                       <img className="mx-auto w-full h-[18em] md:h-full rounded-xl object-cover object-center hover:scale-110 duration-500" src="images/MTSS-Podcast.png" alt="Reimagining MTSS: A Pathway to Whole School Well-Being" loading="lazy" width="" height=""/>
                     </a>
                   </div>
@@ -59,8 +59,8 @@ export default async function Resources() {
                   <div className="pl-4 pt-2 pb-6 flex flex-col lg:items-center lg:flex-row">
                     <div>
                       <p className="pl-4 font-bold">
-                        <a className="flex pb-2" href="https://education.ucsb.edu/people/dean-emeriti-faculty/michael-furlong" target="_blank" onClick={() => sendGAEvent({ event: 'linkClicked', value: 'Reimagining MTSS: Michael Furlong' })}>Michael Furlong <RxOpenInNewWindow size={18} className="ml-1 relative top-[2px]"/></a>
-                        <a className="flex" href="https://education.ucsb.edu/research-faculty/bio?first=Erin&last=Dowdy" target="_blank" onClick={() => sendGAEvent({ event: 'linkClicked', value: 'Reimagining MTSS: Erin Dowdy' })}>Erin Dowdy <RxOpenInNewWindow size={18} className="ml-1 relative top-[2px]"/></a>
+                        <a className="flex pb-2" href="https://education.ucsb.edu/people/dean-emeriti-faculty/michael-furlong" target="_blank" onClick={() => sendGAEvent('event', 'linkClicked', { value: 'Reimagining MTSS: Michael Furlong' })}>Michael Furlong <RxOpenInNewWindow size={18} className="ml-1 relative top-[2px]"/></a>
+                        <a className="flex" href="https://education.ucsb.edu/research-faculty/bio?first=Erin&last=Dowdy" target="_blank" onClick={() => sendGAEvent('event', 'linkClicked', { value: 'Reimagining MTSS: Erin Dowdy' })}>Erin Dowdy <RxOpenInNewWindow size={18} className="ml-1 relative top-[2px]"/></a>
                       </p>
                     </div>
                     <div className="flex grow pl-4 pt-4 pr-8 lg:pr-6 lg:pt-0 lg:justify-end">
@@ -72,7 +72,7 @@ export default async function Resources() {
                         </Button>
                       </a>
 */}
-                      <a href="https://youtu.be/yO2MT3-kLYY?si=loWtxkfewlpmbdC4" target="_blank" onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'Reimagining MTSS: Watch video' })}>
+                      <a href="https://youtu.be/yO2MT3-kLYY?si=loWtxkfewlpmbdC4" target="_blank" onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'Reimagining MTSS: Watch video' })}>
                         <Button>
                           Watch video
                           <BsPlayBtnFill size={18} className="ml-2" />
