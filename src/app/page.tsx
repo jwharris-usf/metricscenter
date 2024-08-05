@@ -1,5 +1,3 @@
-'use client'
-
 import Hero from "./components/ui/Hero";
 import Alert from "./components/ui/Alert";
 import { Badge } from "./components/ui/Badge";
@@ -124,14 +122,16 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
+{/*
       <section className="pt-32" id="connect">
+*/}
 {/*
         <div aria-hidden="true" className="absolute inset-0 top-80 grid grid-cols-2 opacity-50">
           <div className="h-60 bg-gradient-to-br from-blue-900 to-purple-400 blur-[110px]"></div>
           <div className="h-40 bg-gradient-to-r from-blue-400 to-sky-400 blur-[110px]"></div>
         </div>
 */}
+{/*        
         <div className="mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0">
           <div className="text-center">
             <h1 className="text-4xl font-black lg:text-5xl">Connect with us</h1>
@@ -147,9 +147,6 @@ export default async function Home() {
                       Loading Tweets by @METRICS_Center...
                     </a>
                     <script async src="https://platform.twitter.com/widgets.js"></script>
-{/*
-                    Scroll to view more
-*/}
                   </div>
                 </div>
               </div>
@@ -165,13 +162,6 @@ export default async function Home() {
                     </Button>
                   </a>
                 </p>
-{/*
-                <div className="mt-8">
-                  <a href="/about-us" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">
-                    Learn more
-                  </a>
-                </div>
-*/}
               </div>
 
             </div>
@@ -180,6 +170,7 @@ export default async function Home() {
         </div>
 
       </section>
+*/}
     </>
   );
 }
