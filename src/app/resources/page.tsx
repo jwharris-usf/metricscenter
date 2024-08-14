@@ -156,7 +156,13 @@ export default async function Resources() {
           <h2 className="text-4xl font-black border-b border-gray-300">Videos</h2>
 
           <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            
+          
+            {resourceCards.data.attributes.resource_card.map((resourceCard:any) => (
+              <div key={resourceCard.id} className="flex">
+                <ResourceCard resourceCard={resourceCard} />
+              </div>
+            ))}
+
             <a href="https://youtu.be/2vCVScivgQk" className="hover:no-underline" target="_blank">
               <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12 grow h-full text-left">
                 <div>
@@ -181,12 +187,7 @@ export default async function Resources() {
                 </div>
               </div>
             </a>
-          
-            {resourceCards.data.attributes.resource_card.map((resourceCard:any) => (
-              <div key={resourceCard.id} className="flex">
-                <ResourceCard resourceCard={resourceCard} />
-              </div>
-            ))}
+
           </div>
 
         </div>
