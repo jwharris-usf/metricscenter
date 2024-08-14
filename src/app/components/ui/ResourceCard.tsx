@@ -82,10 +82,6 @@ const ResourceCard = ({ resourceCard }: any) => {
               <a href="/images/PLC-Kickoff-2024-slides.pdf" target="_blank">
                 <Button variant="outline" className='mx-4'>PDF</Button>
               </a>
-              or
-              <a href="/images/PLC-Kickoff-2024-transcript.txt" target="_blank">
-                <Button variant="outline" className='mx-4'>Transcript</Button>
-              </a>
             </div>
           </DialogFooter>
         )}
