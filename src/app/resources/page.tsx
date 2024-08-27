@@ -1,5 +1,3 @@
-'use client'
-
 import Hero from "../components/ui/Hero";
 import { GrDocumentPdf } from "react-icons/gr";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -49,12 +47,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">A Q&A With Katherine Dockweiler, Ed.D. The ARTERY (Active Recruitment...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/METRICS_ARTERYQA_FINAL.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-METRICS ARTERY QA' )}>
+              <a className="m-4" href="/images/METRICS_ARTERYQA_FINAL.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/METRICS_ARTERYQA_FINAL.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-METRICS ARTERY QA' )}>
+              <a className="m-4" href="/images/METRICS_ARTERYQA_FINAL.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -71,12 +69,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">Learn about strategies to effectively lead a school mental health program.</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-Effective Project Management' )}>
+              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-Effective Project Management' )}>
+              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -93,12 +91,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">This practice brief provides educators with information and resources on...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-K-12 Suicide Prevention Practice Brief' )}>
+              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-K-12 Suicide Prevention Practice Brief' )}>
+              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -115,12 +113,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">This worksheet includes guidance for grantees completing Section A of the...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-SBMH Guidance - Year 1 GPRAs Reporting' )}>
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-SBMH Guidance - Year 1 GPRAs Reporting' )}>
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -137,12 +135,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">This worksheet includes guidance for grantees completing Section A of the...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-MHSP Guidance - Year 1 GPRAs Reporting' )}>
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-MHSP Guidance - Year 1 GPRAs Reporting' )}>
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -159,12 +157,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">I have a question about my SBMH/MHSP grant. Who should I contact?</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-METRICS or ED - Who should I contact' )}>
+              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-METRICS or ED - Who should I contact' )}>
+              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -187,7 +185,7 @@ export default async function Resources() {
               </div>
             ))}
 
-            <a href="https://youtu.be/2vCVScivgQk" className="hover:no-underline" target="_blank" onClick={() => sendGAEvent('event', 'button_video-K-12 Suicide Prevention' )}>
+            <a href="https://youtu.be/2vCVScivgQk" className="hover:no-underline" target="_blank">
               <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12 grow h-full text-left">
                 <div>
                   <div className="border border-gray-200 bg-gray-500 hover:bg-gray-200 transition duration-500">
