@@ -106,7 +106,7 @@ export default async function Home() {
             <div className="lg:w-1/2 lg:pr-10">
               <h2 className="text-4xl font-black">Explore grant funded projects</h2>
               <p className="pt-5">
-                Visit our Interactive Project Map to learn more about School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the county.
+                Visit our Interactive Project Map to learn more about School Based Mental Health (SBMH) and Mental Health Service Professional (MHSP) grant funded projects around the country.
               </p>
               <div className="mt-8">
                 <a href="/about-us/interactive-map" className="text-white text-sm btn-brand-blue hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">

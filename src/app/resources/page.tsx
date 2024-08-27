@@ -1,3 +1,5 @@
+'use client'
+
 import Hero from "../components/ui/Hero";
 import { GrDocumentPdf } from "react-icons/gr";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -6,8 +8,8 @@ import { RxVideo } from "react-icons/rx";
 import ResourceCard from "../components/ui/ResourceCard";
 import FeaturedResourceCard from "../components/ui/FeaturedResourceCard";
 import { Button } from "../components/ui/Button";
-
 import { BsPlayBtnFill } from "react-icons/bs";
+import { sendGAEvent } from '@next/third-parties/google'
 
 async function fetchResourceCards() {
   const options = {
@@ -41,18 +43,18 @@ export default async function Resources() {
           <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
-                Effective Project Management
+                METRICS ARTERY Q & A
                 <GrDocumentPdf size={20} className="ml-3"/>
               </div>
-              <div className="text-sm text-gray-500 mt-1">Learn about strategies to effectively lead a school mental health program.</div>
+              <div className="text-sm text-gray-500 mt-1">A Q&A With Katherine Dockweiler, Ed.D. The ARTERY (Active Recruitment...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" target="_blank">
+              <a className="m-4" href="/images/METRICS_ARTERYQA_FINAL.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-METRICS ARTERY QA' )}>
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" download target="_blank">
+              <a className="m-4" href="/images/METRICS_ARTERYQA_FINAL.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-METRICS ARTERY QA' )}>
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -61,6 +63,28 @@ export default async function Resources() {
           </div>
 
           <div className="flex items-center hover:bg-slate-200">
+            <div className="flex flex-col p-4">
+              <div className="flex flex-row grow font-semibold">
+                Effective Project Management
+                <GrDocumentPdf size={20} className="ml-3"/>
+              </div>
+              <div className="text-sm text-gray-500 mt-1">Learn about strategies to effectively lead a school mental health program.</div>
+            </div>
+            <div className="flex items-center justify-end grow">
+              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-Effective Project Management' )}>
+                <Button variant="ghost">
+                  View <RxOpenInNewWindow size={18} className="ml-2"/>
+                </Button>
+              </a>
+              <a className="m-4" href="/images/EffectiveProjectManagement.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-Effective Project Management' )}>
+                <Button variant="ghost">
+                  Download <RxDownload size={18} className="ml-2"/>
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 K-12 Suicide Prevention Practice Brief
@@ -69,34 +93,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">This practice brief provides educators with information and resources on...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" target="_blank">
+              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-K-12 Suicide Prevention Practice Brief' )}>
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" download target="_blank">
-                <Button variant="ghost">
-                  Download <RxDownload size={18} className="ml-2"/>
-                </Button>
-              </a>
-            </div>
-          </div>
-
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
-            <div className="flex flex-col p-4">
-              <div className="flex flex-row grow font-semibold">
-                SBMH Guidance - Year 1 GPRAs Reporting
-                <GrDocumentPdf size={20} className="ml-3"/>
-              </div>
-              <div className="text-sm text-gray-500 mt-1">This worksheet includes guidance for grantees completing Section A of the...</div>
-            </div>
-            <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank">
-                <Button variant="ghost">
-                  View <RxOpenInNewWindow size={18} className="ml-2"/>
-                </Button>
-              </a>
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank">
+              <a className="m-4" href="https://scsmh.education.uiowa.edu/wp-content/uploads/2024/05/K-12-Suicide-Prevention-Practice-Brief-4.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-K-12 Suicide Prevention Practice Brief' )}>
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -107,18 +109,18 @@ export default async function Resources() {
           <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
-                MHSP Guidance - Year 1 GPRAs Reporting
+                SBMH Guidance - Year 1 GPRAs Reporting
                 <GrDocumentPdf size={20} className="ml-3"/>
               </div>
               <div className="text-sm text-gray-500 mt-1">This worksheet includes guidance for grantees completing Section A of the...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-SBMH Guidance - Year 1 GPRAs Reporting' )}>
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-SBMH Guidance - Year 1 GPRAs Reporting' )}>
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -129,18 +131,40 @@ export default async function Resources() {
           <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
+                MHSP Guidance - Year 1 GPRAs Reporting
+                <GrDocumentPdf size={20} className="ml-3"/>
+              </div>
+              <div className="text-sm text-gray-500 mt-1">This worksheet includes guidance for grantees completing Section A of the...</div>
+            </div>
+            <div className="flex items-center justify-end grow">
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-MHSP Guidance - Year 1 GPRAs Reporting' )}>
+                <Button variant="ghost">
+                  View <RxOpenInNewWindow size={18} className="ml-2"/>
+                </Button>
+              </a>
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Year-1-FINAL.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-MHSP Guidance - Year 1 GPRAs Reporting' )}>
+                <Button variant="ghost">
+                  Download <RxDownload size={18} className="ml-2"/>
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center hover:bg-slate-200">
+            <div className="flex flex-col p-4">
+              <div className="flex flex-row grow font-semibold">
                 METRICS or ED - Who should I contact?
                 <GrDocumentPdf size={20} className="ml-3"/>
               </div>
               <div className="text-sm text-gray-500 mt-1">I have a question about my SBMH/MHSP grant. Who should I contact?</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" target="_blank">
+              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" target="_blank" onClick={() => sendGAEvent('event', 'button_view-METRICS or ED - Who should I contact' )}>
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" download target="_blank">
+              <a className="m-4" href="/images/METRICS-or-ED-onepager-20240422.pdf" download target="_blank" onClick={() => sendGAEvent('event', 'button_download-METRICS or ED - Who should I contact' )}>
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -163,7 +187,7 @@ export default async function Resources() {
               </div>
             ))}
 
-            <a href="https://youtu.be/2vCVScivgQk" className="hover:no-underline" target="_blank">
+            <a href="https://youtu.be/2vCVScivgQk" className="hover:no-underline" target="_blank" onClick={() => sendGAEvent('event', 'button_video-K-12 Suicide Prevention' )}>
               <div className="rounded-lg border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 sm:p-12 grow h-full text-left">
                 <div>
                   <div className="border border-gray-200 bg-gray-500 hover:bg-gray-200 transition duration-500">
@@ -190,6 +214,14 @@ export default async function Resources() {
 
           </div>
 
+        </div>
+      </section>
+
+      <section className="pt-24" id="videos">
+        <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+          <p className="text-sm">
+            This website contains resources that are provided for the user&apos;s convenience. The inclusion of these materials is not intended to reflect its importance, nor is it intended to endorse any views expressed, or products or services offered. These materials may contain the views and recommendations of various subject matter experts as well as contact addresses, websites, and hypertext links to information created and maintained by other public and private organizations. The opinions expressed in any of these materials do not necessarily reflect the positions or policies of the U.S. Department of Education. The U.S. Department of Education does not control or guarantee the accuracy, relevance, timeliness, or completeness of any outside information included in these materials.
+          </p>
         </div>
       </section>
 
