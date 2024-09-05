@@ -41,7 +41,29 @@ export default async function Resources() {
           <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
-                METRICS ARTERY Q & A
+                BIPOC Mental Health Resources
+                <GrDocumentPdf size={20} className="ml-3"/>
+              </div>
+              <div className="text-sm text-gray-500 mt-1">This document is a collection of resources for learning about and supporting...</div>
+            </div>
+            <div className="flex items-center justify-end grow">
+              <a className="m-4" href="/images/BIPOC-MHAM-Social-Media-Posts-by-Modality.pdf" target="_blank">
+                <Button variant="ghost">
+                  View <RxOpenInNewWindow size={18} className="ml-2"/>
+                </Button>
+              </a>
+              <a className="m-4" href="/images/BIPOC-MHAM-Social-Media-Posts-by-Modality.pdf" download target="_blank">
+                <Button variant="ghost">
+                  Download <RxDownload size={18} className="ml-2"/>
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center hover:bg-slate-200">
+            <div className="flex flex-col p-4">
+              <div className="flex flex-row grow font-semibold">
+                Project ARTERY Q&A
                 <GrDocumentPdf size={20} className="ml-3"/>
               </div>
               <div className="text-sm text-gray-500 mt-1">A Q&A With Katherine Dockweiler, Ed.D. The ARTERY (Active Recruitment...</div>
@@ -60,7 +82,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 Effective Project Management
@@ -82,7 +104,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 K-12 Suicide Prevention Practice Brief
@@ -104,7 +126,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 SBMH Guidance - Year 1 GPRAs Reporting
@@ -126,7 +148,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 MHSP Guidance - Year 1 GPRAs Reporting
@@ -148,7 +170,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 METRICS or ED - Who should I contact?
