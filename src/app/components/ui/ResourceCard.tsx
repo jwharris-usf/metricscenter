@@ -75,7 +75,7 @@ const ResourceCard = ({ resourceCard }: any) => {
             </div>
           </DialogFooter>
         )}
-        { resourceCard.name === 'Professional Learning Communities Webinar' && (
+        { resourceCard.name === 'Professional Learning Communities Kickoff Webinar' && (
           <DialogFooter className='sm:justify-start border-t pt-6'>
             <div className='text-base pb-2'>
               Download the slides from this webinar:
@@ -90,7 +90,7 @@ const ResourceCard = ({ resourceCard }: any) => {
             <div className='text-base pb-2'>
               Download the slides from this webinar:
               <a href="/images/FINAL-MHSP-Year-2-IPR-combined-8-29-v2.pptx" target="_blank">
-                <Button variant="outline" className='mx-4'>PDF</Button>
+                <Button variant="outline" className='mx-4'>PPT</Button>
               </a>
             </div>
           </DialogFooter>
