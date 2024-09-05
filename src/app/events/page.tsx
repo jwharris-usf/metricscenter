@@ -59,7 +59,7 @@ export default function Events() {
           <p>There are no upcoming webinars at this time.</p>
 */}
           <div className="flex flex-col text-center">
-            <h2 className="font-black text-5xl pb-6">August 2024</h2>
+            <h2 className="font-black text-5xl pb-6">September 2024</h2>
             <p>
               September is suicide prevention awareness month. We have compiled a month&apos;s worth of resources and events.
               <br/>
