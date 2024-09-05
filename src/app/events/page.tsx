@@ -61,13 +61,13 @@ export default function Events() {
           <div className="flex flex-col text-center">
             <h2 className="font-black text-5xl pb-6">August 2024</h2>
             <p>
-              August is &quot;Back to School&quot; month! We have compiled a month&apos;s worth of resources and events.
+              September is suicide prevention awareness month. We have compiled a month&apos;s worth of resources and events.
               <br/>
               Please check out the calendar below and share the resources. 
             </p>
           </div>
           <div>
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGLEoIwXFg/LGZf0nea3UtTTqDw7IEXxw/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGOaxFm4K8/w0m4HPar2VaGiDGBBf-Brg/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>
 
         </div>
