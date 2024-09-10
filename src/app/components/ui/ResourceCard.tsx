@@ -95,6 +95,16 @@ const ResourceCard = ({ resourceCard }: any) => {
             </div>
           </DialogFooter>
         )}
+        { resourceCard.name === 'SBMH Grant Program - Year 2 Interim Performance Reporting' && (
+          <DialogFooter className='sm:justify-start border-t pt-6'>
+            <div className='text-base pb-2'>
+              Download the slides from this webinar:
+              <a href="/images/FINAL-Year2-SBMH-APR-Webinar-09052024.pptx" target="_blank">
+                <Button variant="outline" className='mx-4'>PPT</Button>
+              </a>
+            </div>
+          </DialogFooter>
+        )}
       </DialogContent>
     </Dialog>
   )
