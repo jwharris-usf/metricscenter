@@ -69,12 +69,12 @@ export default async function Resources() {
               <div className="text-sm text-gray-500 mt-1">This tool has been developed and provided to assist in the tracking of...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool.xlsx" target="_blank">
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Sept2024.xlsx" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool.xlsx" download target="_blank">
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Sept2024.xlsx" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
