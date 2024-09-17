@@ -8,6 +8,7 @@ import FeaturedResourceCard from "../components/ui/FeaturedResourceCard";
 import { Button } from "../components/ui/Button";
 import { BsPlayBtnFill } from "react-icons/bs";
 import { sendGAEvent } from '@next/third-parties/google'
+import { Badge } from "../components/ui/Badge";
 
 async function fetchResourceCards() {
   const options = {
@@ -65,16 +66,17 @@ export default async function Resources() {
               <div className="flex flex-row grow font-semibold">
                 MHSP Guidance – Excel Tool
                 <GrDocumentPdf size={20} className="ml-3"/>
+                <Badge variant="success">Updated 9/13/24</Badge>
               </div>
               <div className="text-sm text-gray-500 mt-1">This tool has been developed and provided to assist in the tracking of...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Sept2024.xlsx" target="_blank">
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Sept2024-v2.xlsx" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Sept2024.xlsx" download target="_blank">
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Sept2024-v2.xlsx" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
