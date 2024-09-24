@@ -66,7 +66,6 @@ export default async function Resources() {
               <div className="flex flex-row grow font-semibold">
                 SBMH Guidance – Excel Tool
                 <GrDocumentPdf size={20} className="ml-3"/>
-                <Badge variant="success">Updated 9/13/24</Badge>
               </div>
               <div className="text-sm text-gray-500 mt-1">This tool has been developed and provided to assist in the tracking of...</div>
             </div>
