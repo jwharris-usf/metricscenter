@@ -42,6 +42,51 @@ export default async function Resources() {
           <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
+                SBMH Guidance – Year 2 GPRAs Reporting
+                <GrDocumentPdf size={20} className="ml-3"/>
+              </div>
+              <div className="text-sm text-gray-500 mt-1">This resource includes guidance for grantees completing Section A of the...</div>
+            </div>
+            <div className="flex items-center justify-end grow">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-2-FINAL.pdf" target="_blank">
+                <Button variant="ghost">
+                  View <RxOpenInNewWindow size={18} className="ml-2"/>
+                </Button>
+              </a>
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-2-FINAL.pdf" download target="_blank">
+                <Button variant="ghost">
+                  Download <RxDownload size={18} className="ml-2"/>
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center hover:bg-slate-200">
+            <div className="flex flex-col p-4">
+              <div className="flex flex-row grow font-semibold">
+                SBMH Guidance – Excel Tool
+                <GrDocumentPdf size={20} className="ml-3"/>
+                <Badge variant="success">Updated 9/13/24</Badge>
+              </div>
+              <div className="text-sm text-gray-500 mt-1">This tool has been developed and provided to assist in the tracking of...</div>
+            </div>
+            <div className="flex items-center justify-end grow">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Excel-Tool_September20_2024.xlsx" target="_blank">
+                <Button variant="ghost">
+                  View <RxOpenInNewWindow size={18} className="ml-2"/>
+                </Button>
+              </a>
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Excel-Tool_September20_2024.xlsx" download target="_blank">
+                <Button variant="ghost">
+                  Download <RxDownload size={18} className="ml-2"/>
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+            <div className="flex flex-col p-4">
+              <div className="flex flex-row grow font-semibold">
                 MHSP Guidance – Year 2 GPRAs Reporting
                 <GrDocumentPdf size={20} className="ml-3"/>
               </div>
