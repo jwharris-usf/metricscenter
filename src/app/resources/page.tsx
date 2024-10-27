@@ -44,16 +44,17 @@ export default async function Resources() {
               <div className="flex flex-row grow font-semibold">
                 SBMH Guidance – Year 2 GPRAs Reporting
                 <GrDocumentPdf size={20} className="ml-3"/>
+                <Badge variant="success">Updated 10/28/24</Badge>
               </div>
               <div className="text-sm text-gray-500 mt-1">This resource includes guidance for grantees completing Section A of the...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-2-FINAL.pdf" target="_blank">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-2-REV-2.pdf" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-2-FINAL.pdf" download target="_blank">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Year-2-REV-2.pdf" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
