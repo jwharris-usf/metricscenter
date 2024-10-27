@@ -45,11 +45,31 @@ const ResourceCard = ({ resourceCard }: any) => {
               <p className="text-lg font-semibold">
                 <span>{resourceCard.name}</span>
               </p>
-              <p>
+              <div className="flex flex-col sm:flex-row justify-between">
+                { resourceCard.name === 'Retention of School Mental Health Professionals' && (
+                  <a href="/images/METRICS-Webinar-Retention-April-2024.pptx" target="_blank" className="mb-4 sm:mb-0">
+                    <Button variant="outline">Download slides</Button>
+                  </a>
+                )}
+                { resourceCard.name === 'Professional Learning Communities Kickoff Webinar' && (
+                  <a href="/images/PLC-Kickoff-2024-slides.pdf" target="_blank" className="mb-4 sm:mb-0">
+                    <Button variant="outline">Download slides</Button>
+                  </a>
+                )}
+                { resourceCard.name === 'MHSP Grant Program - Year 2 Interim Performance Reporting' && (
+                  <a href="/images/FINAL-MHSP-Year-2-IPR-combined-8-29-v2.pptx" target="_blank" className="mb-4 sm:mb-0">
+                    <Button variant="outline">Download slides</Button>
+                  </a>
+                )}
+                { resourceCard.name === 'SBMH Grant Program - Year 2 Interim Performance Reporting' && (
+                  <a href="/images/FINAL-Year2-SBMH-APR-Webinar-09052024-v2.pptx" target="_blank" className="mb-4 sm:mb-0">
+                    <Button variant="outline">Download slides</Button>
+                  </a>
+                )}
                 <span className="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 py-2">
                   Watch
                 </span>
-              </p>
+              </div>
             </div>
           </div>
         </div>
