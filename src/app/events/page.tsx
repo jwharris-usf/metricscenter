@@ -59,15 +59,15 @@ export default function Events() {
           <p>There are no upcoming webinars at this time.</p>
 */}
           <div className="flex flex-col text-center">
-            <h2 className="font-black text-5xl pb-6">October 2024</h2>
+            <h2 className="font-black text-5xl pb-6">November 2024</h2>
             <p>
-              October is mental health screening, bullying, and ADHD awareness month. We have compiled a month&apos;s worth of resources and events.
+              November is gratitude and mental health month. We have compiled a month&apos;s worth of resources and events.
               <br/>
               Please check out the calendar below and share the resources. 
             </p>
           </div>
           <div>
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGQs9vQ2mA/EjIh8dBCdsX3l16_dBltBg/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGTd4HNttY/8Ox2TNZUAjVD0_SvNbR-Tw/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>
 
         </div>
