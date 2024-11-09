@@ -38,8 +38,30 @@ export default async function Resources() {
       <section className="pt-24" id="documents">
         <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
           <h2 className="text-4xl font-black border-b border-gray-300">Documents</h2>
-
+          
           <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+            <div className="flex flex-col p-4">
+              <div className="flex flex-row grow font-semibold">
+                SBMH GPRA FAQ
+                <GrDocumentPdf size={20} className="ml-3"/>
+              </div>
+              <div className="text-sm text-gray-500 mt-1">Commonly Asked Questions - SBMH Government Performance and Results Act (GPRA)</div>
+            </div>
+            <div className="flex items-center justify-end grow">
+              <a className="m-4" href="/images/METRICS_SBMH_GPRA_FAQ_110524.pdf" target="_blank">
+                <Button variant="ghost">
+                  View <RxOpenInNewWindow size={18} className="ml-2"/>
+                </Button>
+              </a>
+              <a className="m-4" href="/images/METRICS_SBMH_GPRA_FAQ_110524.pdf" download target="_blank">
+                <Button variant="ghost">
+                  Download <RxDownload size={18} className="ml-2"/>
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 SBMH Guidance – Year 2 GPRAs Reporting
@@ -62,7 +84,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 SBMH Guidance – Excel Tool
@@ -84,7 +106,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 MHSP Guidance – Year 2 GPRAs Reporting
@@ -107,7 +129,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 MHSP Guidance – Excel Tool
@@ -130,7 +152,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 BIPOC Mental Health Resources
@@ -152,7 +174,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 Project ARTERY Q&A
@@ -174,7 +196,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 Effective Project Management
@@ -196,7 +218,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 K-12 Suicide Prevention Practice Brief
@@ -218,7 +240,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 SBMH Guidance - Year 1 GPRAs Reporting
@@ -240,7 +262,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center hover:bg-slate-200">
+          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 MHSP Guidance - Year 1 GPRAs Reporting
@@ -262,7 +284,7 @@ export default async function Resources() {
             </div>
           </div>
 
-          <div className="flex items-center bg-gray-100/75 hover:bg-slate-200">
+          <div className="flex items-center hover:bg-slate-200">
             <div className="flex flex-col p-4">
               <div className="flex flex-row grow font-semibold">
                 METRICS or ED - Who should I contact?
