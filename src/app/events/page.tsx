@@ -59,15 +59,15 @@ export default function Events() {
           <p>There are no upcoming webinars at this time.</p>
 */}
           <div className="flex flex-col text-center">
-            <h2 className="font-black text-5xl pb-6">December 2024</h2>
+            <h2 className="font-black text-5xl pb-6">January 2025</h2>
             <p>
-              Happy Holidays. We have compiled a month&apos;s worth of resources and events.
+              Happy New Year. We have compiled a month&apos;s worth of resources and events.
               <br/>
               Please check out the calendar below and share the resources. 
             </p>
           </div>
           <div>
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGWYrQ7Ovw/eXOp4ugPQnXYLdj8sPybCg/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGZDcwjTQ8/Q2A3FDN1Wx2bHt-EyTvpUw/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>
           <div className="mt-12">
             <p>The inclusion of links in this resource is for informational purposes only. The appearance of these links does not constitute an endorsement or approval by the University of Wisconsin-Madison, the University of South Florida, the University of California, Santa Barbara, or the University of Iowa of any products, services, or opinions expressed on these external websites. The respective universities bear no responsibility for the accuracy, legality, or content of the external sites or for that of subsequent links.</p>
