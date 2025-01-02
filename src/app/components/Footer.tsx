@@ -85,7 +85,7 @@ const Footer = () => {
             <div className="col-span-8 md:col-span-7 ml-2">The METRICS TA Center is operated by the University of Wisconsin-Madison under Contract S184U230011, awarded by the U.S. Department of Education. All materials created or disseminated by the METRICS TA Center, including the contents of this Website, should not be presumed to reflect the positions or policies of the U.S. Department of Education or to imply endorsement by the U.S. Department of Education. The U.S. Department of Education and the METRICS TA Center do not guarantee the accuracy, timeliness, applicability, or completeness of any outside information provided in these materials. The METRICS TA Center does not endorse products, services, or service providers and does not provide certificates other than certificates of attendance.</div>
           </div>
           <div className="text-sm border-t border-gray-200 mt-4 pt-4">
-            <p><span className="font-bold">METRICS</span> &#160; © 2024 &#160; • &#160; All rights reserved</p>
+            <p><span className="font-bold">METRICS</span> &#160; © 2025 &#160; • &#160; All rights reserved</p>
           </div>
         </div>
       </footer>
