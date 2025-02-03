@@ -24,7 +24,7 @@ export default async function Home() {
     <>
       <Hero type={'Primary'} title={'Recruiting, training, and retaining'} subTitle={'METRICS provides support to states, districts, and schools with the goal of increasing students\' access to highly qualified mental health professionals in their schools.'} />
 
-      { alerts && <Alert alert={alerts.data.attributes.alert} /> }
+      {/* { alerts && <Alert alert={alerts.data.attributes.alert} /> } */}
 
       <section className="pt-20 md:pt-32">
         <div className="mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0 flex flex-col lg:flex-row justify-between">
