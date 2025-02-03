@@ -46,11 +46,11 @@ const ResourceCard = ({ resourceCard }: any) => {
                 <span>{resourceCard.name}</span>
               </p>
               <div className="flex flex-col sm:flex-row justify-between">
-                { resourceCard.name === 'Retention of School Mental Health Professionals' && (
+                {/* { resourceCard.name === 'Retention of School Mental Health Professionals' && (
                   <a href="/images/METRICS-Webinar-Retention-April-2024.pptx" target="_blank" className="mb-4 sm:mb-0">
                     <Button variant="outline">Download slides</Button>
                   </a>
-                )}
+                )} */}
                 { resourceCard.name === 'Professional Learning Communities Kickoff Webinar' && (
                   <a href="/images/PLC-Kickoff-2024-slides.pdf" target="_blank" className="mb-4 sm:mb-0">
                     <Button variant="outline">Download slides</Button>
@@ -81,7 +81,7 @@ const ResourceCard = ({ resourceCard }: any) => {
             <iframe src={resourceCard.url} allow="autoplay; fullscreen; picture-in-picture" className="w-[70vw] h-[70vh]" title={resourceCard.name} data-ready="true"></iframe>
           </DialogDescription>
         </DialogHeader>
-        { resourceCard.name === 'Retention of School Mental Health Professionals' && (
+        {/* { resourceCard.name === 'Retention of School Mental Health Professionals' && (
           <DialogFooter className='sm:justify-start border-t pt-6'>
             <div className='text-base pb-2'>
               Download the slides from this webinar:
@@ -94,7 +94,7 @@ const ResourceCard = ({ resourceCard }: any) => {
               </a>
             </div>
           </DialogFooter>
-        )}
+        )} */}
         { resourceCard.name === 'Professional Learning Communities Kickoff Webinar' && (
           <DialogFooter className='sm:justify-start border-t pt-6'>
             <div className='text-base pb-2'>
