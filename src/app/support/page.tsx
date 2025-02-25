@@ -33,6 +33,7 @@ export default function Support() {
   const [dropdownOptions, setDropdownOptions] = useState<string[]>([]);
   const [grantOptions, setGrantOptions] = useState<string[]>([]);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // Fetch dropdown and grant options from Smartsheet when the component mounts
@@ -99,6 +100,8 @@ export default function Support() {
       });
 
       if (response.ok) {
+        setIsLoading(true);
+
         console.log("Form data submitted successfully:", await response.json());
         alert("Form Submitted Successfully!");
       } else {
@@ -243,12 +246,23 @@ export default function Support() {
                 related to your request for technical assistance
               </p>
               <br />
-              <button
-                type="submit"
-                className="bg-[#153860] mt-2.5 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-[#1a456f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1a456f]"
-              >
-                Submit
-              </button>
+
+              {isLoading ? (
+                <button
+                  type="submit" disabled={isLoading}
+                  className="opacity-50 bg-[#153860] mt-2.5 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-[#1a456f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1a456f]"
+                >
+                  Submit
+                </button>
+              ) : (
+                <button
+                  type="submit"
+                  className="bg-[#153860] mt-2.5 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-[#1a456f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1a456f]"
+                >
+                  Submit
+                </button>
+              )}
+
             </form>
           </div>
         </div>
