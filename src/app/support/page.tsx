@@ -81,6 +81,7 @@ export default function Support() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
 
     try {
       const formDataToSend = new FormData();
@@ -100,15 +101,15 @@ export default function Support() {
       });
 
       if (response.ok) {
-        setIsLoading(true);
-
         console.log("Form data submitted successfully:", await response.json());
         alert("Form Submitted Successfully!");
       } else {
+        setIsLoading(false);
         console.error("Error submitting form data:", response.statusText);
         alert("Unsuccessful Form Submission");
       }
     } catch (error) {
+      setIsLoading(false);
       console.error("Error submitting form data:", error);
     }
   };
