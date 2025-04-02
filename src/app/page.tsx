@@ -2,6 +2,7 @@ import Hero from "./components/ui/Hero";
 import Alert from "./components/ui/Alert";
 import { Badge } from "./components/ui/Badge";
 import { Button } from "./components/ui/Button"
+import AnimatedCounter from "./components/animated-counter";
 
 async function fetchAlerts() {
   const options = {
@@ -24,9 +25,33 @@ export default async function Home() {
     <>
       <Hero type={'Primary'} title={'Recruiting, training, and retaining'} subTitle={'METRICS provides support to states, districts, and schools with the goal of increasing students\' access to highly qualified mental health professionals in their schools.'} />
 
+      <section className="flex flex-col background-brand-blue text-white/90">
+        <div className="flex">
+          <div className="lg:w-[38%] py-8 flex items-end flex-col pr-20">
+            <div className="flex flex-col items-center">
+              <h2 className="text-6xl leading-tight text-white"><sup className="text-xl -top-[1.25em] pr-1">$</sup>61,273,493</h2>
+              <p className="w-[17rem] text-center text-sm">Dollars allocated to mental health providers in high-need school districts throughout the U.S.</p>
+            </div>
+          </div>
+          <div className="lg:w-[24%] py-8 flex items-center flex-col">
+            <AnimatedCounter target={747461} className="text-[4.25rem] leading-tight tracking-tight text-white" />
+            <p className="w-[17rem] text-center text-sm">Students received school-based mental health services</p>
+          </div>
+          <div className="lg:w-[38%] py-8 flex items-start flex-col pl-20">
+            <div className="flex flex-col items-center">
+              <h2 className="text-6xl leading-tight text-white"><sup className="text-xl -top-[1.25em] pr-1">$</sup>81</h2>
+              <p className="w-[17rem] text-center text-sm">Dollars spent per student served on improving access to school mental health programs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="text-center text-sm pt-2 italic">
+        *The data above reflects outcomes for the School-Based Mental Health grant recipients in 2023
+      </div>
+
       {/* { alerts && <Alert alert={alerts.data.attributes.alert} /> } */}
 
-      <section className="pt-20 md:pt-32">
+      <section className="pt-20 md:pt-44">
         <div className="mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0 flex flex-col lg:flex-row justify-between">
           <div className="lg:w-1/2 lg:pr-10">
             <div className="flex items-center">
@@ -50,7 +75,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="pt-20 md:pt-32">
+      <section className="pt-20 md:pt-44">
         <div className="mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0">
           <div className="text-center">
             <h1 className="text-4xl font-black lg:text-5xl">About us</h1>
@@ -100,7 +125,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="pt-32">
+      <section className="pt-44">
         <div className="bg-slate-100 py-20">
           <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 flex flex-col lg:flex-row justify-between">
             <div className="lg:w-1/2 lg:pr-10">
