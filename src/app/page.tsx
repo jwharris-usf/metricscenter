@@ -39,7 +39,7 @@ export default async function Home() {
           </div>
           <div className="lg:w-[38%] py-8 flex items-start flex-col pl-20">
             <div className="flex flex-col items-center">
-              <h2 className="text-6xl leading-tight text-white"><sup className="text-xl -top-[1.25em] pr-1">$</sup>81</h2>
+              <h2 className="text-6xl leading-tight text-white"><sup className="text-xl -top-[1.25em] pr-1">$</sup>82</h2>
               <p className="w-[17rem] text-center text-sm">Dollars spent per student served on improving access to school mental health programs</p>
             </div>
           </div>
