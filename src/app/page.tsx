@@ -25,7 +25,7 @@ export default async function Home() {
     <>
       <Hero type={'Primary'} title={'Recruiting, training, and retaining'} subTitle={'METRICS provides support to states, districts, and schools with the goal of increasing students\' access to highly qualified mental health professionals in their schools.'} />
 
-      <section className="flex flex-col background-brand-blue text-white/90">
+      {/* <section className="flex flex-col background-brand-blue text-white/90">
         <div className="flex">
           <div className="lg:w-[38%] py-8 flex items-end flex-col pr-20">
             <div className="flex flex-col items-center">
@@ -47,11 +47,11 @@ export default async function Home() {
       </section>
       <div className="text-center text-sm pt-2 italic">
         *The data above reflects outcomes for the School-Based Mental Health grant recipients in 2023
-      </div>
+      </div> */}
 
       {/* { alerts && <Alert alert={alerts.data.attributes.alert} /> } */}
 
-      <section className="pt-20 md:pt-44">
+      <section className="pt-20 md:pt-32">
         <div className="mx-auto xl:max-w-6xl px-4 sm:px-12 xl:px-0 flex flex-col lg:flex-row justify-between">
           <div className="lg:w-1/2 lg:pr-10">
             <div className="flex items-center">
