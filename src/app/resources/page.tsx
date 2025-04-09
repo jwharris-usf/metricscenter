@@ -111,17 +111,17 @@ export default async function Resources() {
               <div className="flex flex-row grow font-semibold">
                 SBMH Guidance – Excel Tool
                 <GrDocumentExcel size={20} className="ml-3"/>
-                <Badge variant="success">Updated 1/15/25</Badge>
+                <Badge variant="success">Updated 4/8/25</Badge>
               </div>
               <div className="text-sm text-gray-500 mt-1">This tool has been developed and provided to assist in the tracking of...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Excel-Tool_October5_2024_v_FINAL.xlsx" target="_blank">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Excel-Tool_v3_April2025.xlsx" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Excel-Tool_October5_2024_v_FINAL.xlsx" download target="_blank">
+              <a className="m-4" href="/images/SBMH-GPRA-Guidance-Excel-Tool_v3_April2025.xlsx" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
@@ -157,17 +157,17 @@ export default async function Resources() {
               <div className="flex flex-row grow font-semibold">
                 MHSP Guidance – Excel Tool
                 <GrDocumentExcel size={20} className="ml-3"/>
-                <Badge variant="success">Updated 1/15/25</Badge>
+                <Badge variant="success">Updated 4/8/25</Badge>
               </div>
               <div className="text-sm text-gray-500 mt-1">This tool has been developed and provided to assist in the tracking of...</div>
             </div>
             <div className="flex items-center justify-end grow">
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Oct_3_2024-v3_FINAL.xlsx" target="_blank">
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_v4_April2025.xlsx" target="_blank">
                 <Button variant="ghost">
                   View <RxOpenInNewWindow size={18} className="ml-2"/>
                 </Button>
               </a>
-              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_Oct_3_2024-v3_FINAL.xlsx" download target="_blank">
+              <a className="m-4" href="/images/MHSP-GPRA-Guidance-Excel-Tool_v4_April2025.xlsx" download target="_blank">
                 <Button variant="ghost">
                   Download <RxDownload size={18} className="ml-2"/>
                 </Button>
