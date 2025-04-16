@@ -59,24 +59,24 @@ export default function Events() {
           <p>There are no upcoming webinars at this time.</p>
 */}
 
-          {/* <div className="flex flex-col text-center">
-            <h2 className="font-black text-5xl pb-6">January 2025</h2>
+          <div className="flex flex-col text-center">
+            <h2 className="font-black text-5xl pb-6">April 2025</h2>
             <p>
-              Happy New Year. We have compiled a month&apos;s worth of resources and events.
+              April is National Stress Awareness Month. We have compiled a month&apos;s worth of resources and events.
               <br/>
               Please check out the calendar below and share the resources. 
             </p>
           </div>
-          <div>
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGZDcwjTQ8/Q2A3FDN1Wx2bHt-EyTvpUw/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
-          </div> */}
+          <div><br />
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGhNYQX7K0/wB21Jgi3IRo6Rl8E8p3ZlA/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
+          </div>
 
-          <div className="flex flex-col text-center">
+          {/* <div className="flex flex-col text-center">
             <h2 className="font-black text-5xl pb-6">Stay tuned</h2>
             <p>
               Please check back soon for an updated calendar of resources. 
             </p>
-          </div>
+          </div> */}
 
           <div className="mt-12">
             <p>The inclusion of links in this resource is for informational purposes only. The appearance of these links does not constitute an endorsement or approval by the University of Wisconsin-Madison, the University of South Florida, the University of California, Santa Barbara, or the University of Iowa of any products, services, or opinions expressed on these external websites. The respective universities bear no responsibility for the accuracy, legality, or content of the external sites or for that of subsequent links.</p>
