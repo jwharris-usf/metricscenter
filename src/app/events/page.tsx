@@ -60,15 +60,15 @@ export default function Events() {
 */}
 
           <div className="flex flex-col text-center">
-            <h2 className="font-black text-5xl pb-6">May 2025</h2>
+            <h2 className="font-black text-5xl pb-6">June 2025</h2>
             <p>
-              May is Mental Health Awareness Month. We have compiled a month&apos;s worth of resources and events.
+              We have compiled a month&apos;s worth of resources and events.
               <br/>
               Please check out the calendar below and share the resources. 
             </p>
           </div>
           <div><br />
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGkS3X2NsM/S8NxoK7gekTGRN6LiCwhcg/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGniVcFLTk/kYOriXKkW5W99lNwZwnCFA/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>
 
           {/* <div className="flex flex-col text-center">
