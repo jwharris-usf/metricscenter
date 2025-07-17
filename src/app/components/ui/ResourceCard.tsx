@@ -66,6 +66,11 @@ const ResourceCard = ({ resourceCard }: any) => {
                     <Button variant="outline">Download slides</Button>
                   </a>
                 )}
+                { resourceCard.name === 'FY24 Grantee Year 1 APR Webinar' && (
+                  <a href="/images/FY24_APR_Webinar_July 2025_FINAL.pptx" target="_blank" className="mb-4 sm:mb-0">
+                    <Button variant="outline">Download slides</Button>
+                  </a>
+                )}
                 <span className="text-sm btn-brand-blue text-white hover:opacity-90 transform transition flex w-max duration-500 hover:scale-105 font-medium rounded-lg px-4 py-2">
                   Watch
                 </span>
@@ -120,6 +125,16 @@ const ResourceCard = ({ resourceCard }: any) => {
             <div className='text-base pb-2'>
               Download the slides from this webinar:
               <a href="/images/FINAL-Year2-SBMH-APR-Webinar-09052024-v2.pptx" target="_blank">
+                <Button variant="outline" className='mx-4'>PPT</Button>
+              </a>
+            </div>
+          </DialogFooter>
+        )}
+        { resourceCard.name === 'FY24 Grantee Year 1 APR Webinar' && (
+          <DialogFooter className='sm:justify-start border-t pt-6'>
+            <div className='text-base pb-2'>
+              Download the slides from this webinar:
+              <a href="/images/FY24_APR_Webinar_July 2025_FINAL.pptx" target="_blank">
                 <Button variant="outline" className='mx-4'>PPT</Button>
               </a>
             </div>
