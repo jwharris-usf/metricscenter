@@ -60,7 +60,7 @@ export default function Events() {
 */}
 
           <div className="flex flex-col text-center">
-            <h2 className="font-black text-5xl pb-6">August 2025</h2>
+            <h2 className="font-black text-5xl pb-6">September 2025</h2>
             <p>
               We have compiled a month&apos;s worth of resources and events.
               <br/>
@@ -68,7 +68,7 @@ export default function Events() {
             </p>
           </div>
           <div><br />
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGtECiIQeI/BN7-4dUtao-iIX8r7GPxGw/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGvzOnPCWE/4osP5aC-eWOd9MZ00QljMQ/view?embed" allow="fullscreen" width="1200px" height="675px"></iframe>
           </div>
 
           {/* <div className="flex flex-col text-center">
